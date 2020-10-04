@@ -1,40 +1,37 @@
 # sbcheatmenu
+
 Silkie BugBear's Cheat Menu for Crusader Kings III
 
-VERSION
+> VERSION
 1.0.0
 
-SUGGESTED GAME VERSION
+
+> SUGGESTED GAME VERSION
 1.1.2
 
-OS:
+> OS
 Windows, MacOS, Linux
 
-
-TAGS
-
+> TAGS
 Utilities, Gameplay, Character Interactions, Decisions
 
-
-DESCRIPTION
+> DESCRIPTION
 
 Silkie BugBear's Cheat Menu is a mod dedicated to bringing "DP's Cheat Mod" into the 21st century by removing unnecessarily toxic text from my escapist entertainment. Shared in case others have similar preferences. 
 
-DP ports most of the options of the "Sketchy Cheat Menu" from CK2 into CK3, with some omissions, and an irritatingly slower unnecessarily elaborate UI (working on changing this in a new version, SUBSCRIBE to be notified when I'm done).
+DP ports most of the options of the mod "Sketchy Cheat Menu" from CK2 into CK3, with some omissions, and an irritatingly slower unnecessarily elaborate UI (working on changing this in a new version, SUBSCRIBE to be notified when I'm done). 
 
 Based on DP 1.1.9.
 
 Please suggest any edits in comments, and I will try to address them in a new version.
 
 
-Information
+> Information
 
 Right click your character to access the menu.
-
 There are also some decisions that you can access by pressing [F8].
 
-
-What this mod does
+> What this mod does
 
 NEW: Modified text and icons, corrected spelling/punctuation/phrasing.
 NEW: English text only (for now) but compatible with other CK3 language installs.
@@ -57,31 +54,22 @@ Make Traits Great Again! Adds multiple overpowered traits that you can add or re
 The ability to change your government whenever you feel like it.
 More updates coming soon!
 
+> How to Play
 
-How to Play
+- Click the Subscription button
+- Open up CKIII
+- Click "Silkie Bugbear's Cheat Menu"
+- Start up the game!
 
-
-Click the subscription button
-
-Open up CKIII
-
-Click "Silkie Bugbear's Cheat Menu"
-
-Start up the game!
-
-
-
-Future updates
+> Future updates
 
 - More options
 - More cheats
 - More overpowered traits
 - More character interactions
-- *** Actual translations coming in next versions if enough people express interest. ***
-  *** Feel free to send me translated .yml files if I'm too slow. ***
+- *** Actual translations coming in next versions if enough people express interest. Feel free to send me translated .yml files if I'm too slow. ***
 - Polish and flush out all menus
 - Surpass the CK2 Sketchy Cheat Menu in features.
-
 
 > Having Issues?
 
@@ -89,17 +77,17 @@ If you have other problems, delete the cache.
 Unsubbing and resubbing may help.
 If all else fails, do the steps below.
 
-ALTERNATE INSTALL:
+--- ALTERNATE INSTALL:
 
 Subscribe
 
-- Direct Download from here -
+- Direct Download from Github -
 
-Extract "sbcheatmenu.zip" to:
+Extract "sbcheatmenu_main.zip" to:
 - "Steam\steamapps\workshop\content\1158310\2216746850"
 or
 - "[CK3 Install Folder]\game\" and overwrite all files when prompted.
 
+Editing this mod took 4 hours, will continue to update with own options or whenever DP updates.
 
-Press that LIKE BUTTON, COMMENT, FAVORITE, RATE 5 STARS, AND SUBSCRIBE, if you want to motivate me past the hassle of making my private mods public.
-Edit took 4 hours, will continue to update with own options or whenever DP updates.
+> Press that LIKE BUTTON, COMMENT, FAVORITE, RATE 5 STARS, AND SUBSCRIBE if you want to motivate me with the hassle of making my private mods public.
