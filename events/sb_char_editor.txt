@@ -1,0 +1,9470 @@
+﻿
+namespace = sb_char_editor
+
+### CHARACTER SKILLS MENU ###
+
+sb_char_editor.1 = {
+	type = character_event
+	title = sb_char_editor.skill.t
+	desc = sb_char_editor.skill.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.martial.t
+		trigger_event = sb_char_editor.2
+	}
+
+	option = {
+		name = sb_char_editor.diplomacy.t
+		trigger_event = sb_char_editor.3
+	}
+
+	option = {
+		name = sb_char_editor.stewardship.t
+		trigger_event = sb_char_editor.4
+	}
+
+	option = {
+		name = sb_char_editor.intrigue.t
+		trigger_event = sb_char_editor.5
+	}
+
+	option = {
+		name = sb_char_editor.learning.t
+		trigger_event = sb_char_editor.6
+	}
+
+	option = {
+		name = sb_char_editor.prowess.t
+		trigger_event = sb_char_editor.7
+	}
+
+	option = {
+		name = sb_char_editor_main_menu
+		trigger_event = sb_char_editor.1000
+	}
+}
+
+### MARTIAL SKILL ###
+
+sb_char_editor.2 = {
+	type = character_event
+	title = sb_char_editor.martial.t
+	desc = sb_char_editor.skills.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.skill.add10
+		scope:char_editor = {
+			add_martial_skill = 10
+		}
+		trigger_event = sb_char_editor.2
+	}
+
+	option = {
+		name = sb_char_editor.skill.add5
+		scope:char_editor = {
+			add_martial_skill = 5
+		}
+		trigger_event = sb_char_editor.2
+	}
+	
+	option = {
+		name = sb_char_editor.skill.add1
+		scope:char_editor = {
+			add_martial_skill = 1
+		}
+		trigger_event = sb_char_editor.2
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus1
+		scope:char_editor = {
+			add_martial_skill = -1
+		}
+		trigger_event = sb_char_editor.2
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus5
+		scope:char_editor = {
+			add_martial_skill = -5
+		}
+		trigger_event = sb_char_editor.2
+	}
+	
+	option = {
+		name = sb_char_editor.skill.minus10
+		scope:char_editor = {
+			add_martial_skill = -10
+		}
+		trigger_event = sb_char_editor.2
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.1
+	}
+}
+
+### DIPLOMACY SKILL ###
+
+sb_char_editor.3 = {
+	type = character_event
+	title = sb_char_editor.diplomacy.t
+	desc = sb_char_editor.skills.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.skill.add10
+		scope:char_editor = {
+			add_diplomacy_skill = 10
+		}
+		trigger_event = sb_char_editor.3
+	}
+
+	option = {
+		name = sb_char_editor.skill.add5
+		scope:char_editor = {
+			add_diplomacy_skill = 5
+		}
+		trigger_event = sb_char_editor.3
+	}
+
+	option = {
+		name = sb_char_editor.skill.add1
+		scope:char_editor = {
+			add_diplomacy_skill = 1
+		}
+		trigger_event = sb_char_editor.3
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus1
+		scope:char_editor = {
+			add_diplomacy_skill = -1
+		}
+		trigger_event = sb_char_editor.3
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus5
+		scope:char_editor = {
+			add_diplomacy_skill = -5
+		}
+		trigger_event = sb_char_editor.3
+	}
+	
+	option = {
+		name = sb_char_editor.skill.minus10
+		scope:char_editor = {
+			add_diplomacy_skill = -10
+		}
+		trigger_event = sb_char_editor.3
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.1
+	}
+}
+
+### STEWARDSHIP SKILL ###
+
+sb_char_editor.4 = {
+	type = character_event
+	title = sb_char_editor.stewardship.t
+	desc = sb_char_editor.skills.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.skill.add10
+		scope:char_editor = {
+			add_stewardship_skill = 10
+		}
+		trigger_event = sb_char_editor.4
+	}
+
+	option = {
+		name = sb_char_editor.skill.add5
+		scope:char_editor = {
+			add_stewardship_skill = 5
+		}
+		trigger_event = sb_char_editor.4
+	}
+
+	option = {
+		name = sb_char_editor.skill.add1
+		scope:char_editor = {
+			add_stewardship_skill = 1
+		}
+		trigger_event = sb_char_editor.4
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus1
+		scope:char_editor = {
+			add_stewardship_skill = -1
+		}
+		trigger_event = sb_char_editor.4
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus5
+		scope:char_editor = {
+			add_stewardship_skill = -5
+		}
+		trigger_event = sb_char_editor.4
+	}
+	
+	option = {
+		name = sb_char_editor.skill.minus10
+		scope:char_editor = {
+			add_stewardship_skill = -10
+		}
+		trigger_event = sb_char_editor.4
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.1
+	}
+}
+
+### INTRIGUE SKILL ###
+
+sb_char_editor.5 = {
+	type = character_event
+	title = sb_char_editor.intrigue.t
+	desc = sb_char_editor.skills.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.skill.add10
+		scope:char_editor = {
+			add_intrigue_skill = 10
+		}
+		trigger_event = sb_char_editor.5
+	}
+
+	option = {
+		name = sb_char_editor.skill.add5
+		scope:char_editor = {
+			add_intrigue_skill = 5
+		}
+		trigger_event = sb_char_editor.5
+	}
+
+	option = {
+		name = sb_char_editor.skill.add1
+		scope:char_editor = {
+			add_intrigue_skill = 1
+		}
+		trigger_event = sb_char_editor.5
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus1
+		scope:char_editor = {
+			add_intrigue_skill = -1
+		}
+		trigger_event = sb_char_editor.5
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus5
+		scope:char_editor = {
+			add_intrigue_skill = -5
+		}
+		trigger_event = sb_char_editor.5
+	}
+	
+	option = {
+		name = sb_char_editor.skill.minus10
+		scope:char_editor = {
+			add_intrigue_skill = -10
+		}
+		trigger_event = sb_char_editor.5
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.1
+	}
+}
+
+### LEARNING SKILL ###
+
+sb_char_editor.6 = {
+	type = character_event
+	title = sb_char_editor.learning.t
+	desc = sb_char_editor.skills.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.skill.add10
+		scope:char_editor = {
+			add_learning_skill = 10
+		}
+		trigger_event = sb_char_editor.6
+	}
+
+	option = {
+		name = sb_char_editor.skill.add5
+		scope:char_editor = {
+			add_learning_skill = 5
+		}
+		trigger_event = sb_char_editor.6
+	}
+
+	option = {
+		name = sb_char_editor.skill.add1
+		scope:char_editor = {
+			add_learning_skill = 1
+		}
+		trigger_event = sb_char_editor.6
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus1
+		scope:char_editor = {
+			add_learning_skill = -1
+		}
+		trigger_event = sb_char_editor.6
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus5
+		scope:char_editor = {
+			add_learning_skill = -5
+		}
+		trigger_event = sb_char_editor.6
+	}
+	
+	option = {
+		name = sb_char_editor.skill.minus10
+		scope:char_editor = {
+			add_learning_skill = -10
+		}
+		trigger_event = sb_char_editor.6
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.1
+	}
+}
+
+### PROWESS SKILL ###
+
+sb_char_editor.7 = {
+	type = character_event
+	title = sb_char_editor.prowess.t
+	desc = sb_char_editor.skills.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.skill.add10
+		scope:char_editor = {
+			add_prowess_skill = 10
+		}
+		trigger_event = sb_char_editor.7
+	}
+
+	option = {
+		name = sb_char_editor.skill.add5
+		scope:char_editor = {
+			add_prowess_skill = 5
+		}
+		trigger_event = sb_char_editor.7
+	}
+
+	option = {
+		name = sb_char_editor.skill.add1
+		scope:char_editor = {
+			add_prowess_skill = 1
+		}
+		trigger_event = sb_char_editor.7
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus1
+		scope:char_editor = {
+			add_prowess_skill = -1
+		}
+		trigger_event = sb_char_editor.7
+	}
+
+	option = {
+		name = sb_char_editor.skill.minus5
+		scope:char_editor = {
+			add_prowess_skill = -5
+		}
+		trigger_event = sb_char_editor.7
+	}
+	
+	option = {
+		name = sb_char_editor.skill.minus10
+		scope:char_editor = {
+			add_prowess_skill = -10
+		}
+		trigger_event = sb_char_editor.7
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.1
+	}
+}
+
+### SPECIAL TRAIT MENU ###
+
+sb_char_editor.8 = {
+	type = character_event
+	title = sb_char_editor.traits.special.t
+	desc = sb_char_editor.traits.special.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = trait_immortal
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = immortal
+				}
+				remove_trait = immortal
+			}
+			else = {
+				add_trait = immortal
+				set_immortal_age = 30
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_100_stat_man
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = 100_stat_man
+				}
+				remove_trait = 100_stat_man
+			}
+			else = {
+				add_trait = 100_stat_man
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_hale_and_hearty
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = hale_and_hearty
+				}
+				remove_trait = hale_and_hearty
+			}
+			else = {
+				add_trait = hale_and_hearty
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_domain_limit_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = domain_limit_1
+				}
+				remove_trait = domain_limit_1
+			}
+			add_trait = domain_limit_1
+			remove_trait = domain_limit_2
+			remove_trait = domain_limit_3
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_domain_limit_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = domain_limit_2
+				}
+				remove_trait = domain_limit_2
+			}
+			else = {
+				add_trait = domain_limit_2
+				remove_trait = domain_limit_1
+				remove_trait = domain_limit_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_domain_limit_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = domain_limit_3
+				}
+				remove_trait = domain_limit_3
+			}
+			add_trait = domain_limit_3
+			remove_trait = domain_limit_1
+			remove_trait = domain_limit_2
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_beloved_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beloved_1
+				}
+				remove_trait = beloved_1
+			}
+			else = {
+				add_trait = beloved_1
+				remove_trait = beloved_2
+				remove_trait = beloved_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_beloved_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_1 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beloved_2
+				}
+				remove_trait = beloved_2
+			}
+			else = {
+				add_trait = beloved_2
+				remove_trait = beloved_1
+				remove_trait = beloved_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_beloved_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beloved_3
+				}
+				remove_trait = beloved_3
+			}
+			else = {
+				add_trait = beloved_3
+				remove_trait = beloved_1
+				remove_trait = beloved_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_health_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = health_1
+				}
+				remove_trait = health_1
+			}
+			else = {
+				add_trait = health_1
+				remove_trait = health_2
+				remove_trait = health_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_health_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = health_2
+				}
+				remove_trait = health_2
+			}
+			else = {
+				add_trait = health_2
+				remove_trait = health_1
+				remove_trait = health_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_health_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = health_3
+				}
+				remove_trait = health_3
+			}
+			else = {
+				add_trait = health_3
+				remove_trait = health_1
+				remove_trait = health_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_cheat_gold_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = cheat_gold_1
+				}
+				remove_trait = cheat_gold_1
+			}
+			else = {
+				add_trait = cheat_gold_1
+				remove_trait = cheat_gold_2
+				remove_trait = cheat_gold_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_cheat_gold_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = cheat_gold_2
+				}
+				remove_trait = cheat_gold_2
+			}
+			else = {
+				add_trait = cheat_gold_2
+				remove_trait = cheat_gold_1
+				remove_trait = cheat_gold_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_cheat_gold_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = cheat_gold_3
+				}
+				remove_trait = cheat_gold_3
+			}
+			else = {
+				add_trait = cheat_gold_3
+				remove_trait = cheat_gold_1
+				remove_trait = cheat_gold_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_development_cheat_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_2 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = development_cheat_1
+				}
+				remove_trait = development_cheat_1
+			}
+			else = {
+				add_trait = development_cheat_1
+				remove_trait = development_cheat_2
+				remove_trait = development_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_development_cheat_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = development_cheat_2
+				}
+				remove_trait = development_cheat_2
+			}
+			else = {
+				add_trait = development_cheat_2
+				remove_trait = development_cheat_1
+				remove_trait = development_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_development_cheat_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = development_cheat_3
+				}
+				remove_trait = development_cheat_3
+			}
+			else = {
+				add_trait = development_cheat_3
+				remove_trait = development_cheat_1
+				remove_trait = development_cheat_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_dread_gain_cheat_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = dread_gain_cheat_1
+				}
+				remove_trait = dread_gain_cheat_1
+			}
+			else = {
+				add_trait = dread_gain_cheat_1
+				remove_trait = dread_gain_cheat_2
+				remove_trait = dread_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_dread_gain_cheat_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = dread_gain_cheat_2
+				}
+				remove_trait = dread_gain_cheat_2
+			}
+			else = {
+				add_trait = dread_gain_cheat_2
+				remove_trait = dread_gain_cheat_1
+				remove_trait = dread_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_dread_gain_cheat_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = dread_gain_cheat_3
+				}
+				remove_trait = dread_gain_cheat_3
+			}
+			else = {
+				add_trait = dread_gain_cheat_3
+				remove_trait = dread_gain_cheat_1
+				remove_trait = dread_gain_cheat_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_personal_scheme_gain_cheat_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = personal_scheme_gain_cheat_1
+				}
+				remove_trait = personal_scheme_gain_cheat_1
+			}
+			else = {
+				add_trait = personal_scheme_gain_cheat_1
+				remove_trait = personal_scheme_gain_cheat_2
+				remove_trait = personal_scheme_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_personal_scheme_gain_cheat_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = personal_scheme_gain_cheat_2
+				}
+				remove_trait = personal_scheme_gain_cheat_2
+			}
+			else = {
+				add_trait = personal_scheme_gain_cheat_2
+				remove_trait = personal_scheme_gain_cheat_1
+				remove_trait = personal_scheme_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_personal_scheme_gain_cheat_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_3 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = personal_scheme_gain_cheat_3
+				}
+				remove_trait = personal_scheme_gain_cheat_3
+			}
+			else = {
+				add_trait = personal_scheme_gain_cheat_3
+				remove_trait = personal_scheme_gain_cheat_1
+				remove_trait = personal_scheme_gain_cheat_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = trait_stress_loss_cheat_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = stress_loss_cheat_1
+				}
+				remove_trait = stress_loss_cheat_1
+			}
+			else = {
+				add_trait = stress_loss_cheat_1
+				remove_trait = stress_loss_cheat_2
+				remove_trait = stress_loss_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_stress_loss_cheat_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = stress_loss_cheat_2
+				}
+				remove_trait = stress_loss_cheat_2
+			}
+			else = {
+				add_trait = stress_loss_cheat_2
+				remove_trait = stress_loss_cheat_1
+				remove_trait = stress_loss_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_stress_loss_cheat_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = stress_loss_cheat_3
+				}
+				remove_trait = stress_loss_cheat_3
+			}
+			else = {
+				add_trait = stress_loss_cheat_3
+				remove_trait = stress_loss_cheat_1
+				remove_trait = stress_loss_cheat_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_prestige_gain_cheat_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = prestige_gain_cheat_1
+				}
+				remove_trait = prestige_gain_cheat_1
+			}
+			else = {
+				add_trait = prestige_gain_cheat_1
+				remove_trait = prestige_gain_cheat_2
+				remove_trait = prestige_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_prestige_gain_cheat_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = prestige_gain_cheat_2
+				}
+				remove_trait = prestige_gain_cheat_2
+			}
+			else = {
+				add_trait = prestige_gain_cheat_2
+				remove_trait = prestige_gain_cheat_1
+				remove_trait = prestige_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_prestige_gain_cheat_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = prestige_gain_cheat_3
+				}
+				remove_trait = prestige_gain_cheat_3
+			}
+			else = {
+				add_trait = prestige_gain_cheat_3
+				remove_trait = prestige_gain_cheat_1
+				remove_trait = prestige_gain_cheat_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_piety_gain_cheat_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = piety_gain_cheat_1
+				}
+				remove_trait = piety_gain_cheat_1
+			}
+			else = {
+				add_trait = piety_gain_cheat_1
+				remove_trait = piety_gain_cheat_2
+				remove_trait = piety_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_piety_gain_cheat_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_4 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = piety_gain_cheat_2
+				}
+				remove_trait = piety_gain_cheat_2
+			}
+			else = {
+				add_trait = piety_gain_cheat_2
+				remove_trait = piety_gain_cheat_1
+				remove_trait = piety_gain_cheat_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_piety_gain_cheat_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_5 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = piety_gain_cheat_3
+				}
+				remove_trait = piety_gain_cheat_3
+			}
+			else = {
+				add_trait = piety_gain_cheat_3
+				remove_trait = piety_gain_cheat_1
+				remove_trait = piety_gain_cheat_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_sb_control_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_5 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = sb_control_1
+				}
+				remove_trait = sb_control_1
+			}
+			else = {
+				add_trait = sb_control_1
+				remove_trait = sb_control_2
+				remove_trait = sb_control_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_sb_control_2
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_5 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = sb_control_2
+				}
+				remove_trait = sb_control_2
+			}
+			else = {
+				add_trait = sb_control_2
+				remove_trait = sb_control_1
+				remove_trait = sb_control_3
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_sb_control_3
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_5 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = sb_control_3
+				}
+				remove_trait = sb_control_3
+			}
+			else = {
+				add_trait = sb_control_3
+				remove_trait = sb_control_1
+				remove_trait = sb_control_2
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_build_speed_cheat_1
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_5 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = build_speed_cheat_1
+				}
+				remove_trait = build_speed_cheat_1
+			}
+			else = {
+				add_trait = build_speed_cheat_1
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_stress_gain_remove
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_5 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = stress_gain_remove
+				}
+				remove_trait = stress_gain_remove
+			}
+			else = {
+				add_trait = stress_gain_remove
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = trait_tyranny_gain_remove
+		trigger = {
+			scope:char_editor = { has_character_flag = special_trait_page_5 }
+		}
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = tyranny_gain_remove
+				}
+				remove_trait = tyranny_gain_remove
+			}
+			else = {
+				add_trait = tyranny_gain_remove
+			}
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = special_trait_page_1
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = special_trait_page_1
+			add_character_flag = special_trait_page_2
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = special_trait_page_2
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = special_trait_page_2
+			add_character_flag = special_trait_page_3
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = special_trait_page_3
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = special_trait_page_3
+			add_character_flag = special_trait_page_4
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = special_trait_page_4
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = special_trait_page_4
+			add_character_flag = special_trait_page_5
+		}
+		trigger_event = sb_char_editor.8
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = special_trait_page_5
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = special_trait_page_5
+			add_character_flag = special_trait_page_1
+		}
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = sb_char_editor_back
+		scope:char_editor = {
+			remove_character_flag = special_trait_page_1
+			remove_character_flag = special_trait_page_2
+			remove_character_flag = special_trait_page_3
+			remove_character_flag = special_trait_page_4
+			remove_character_flag = special_trait_page_5
+		}
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### TRAIT MENU ###
+
+sb_char_editor.10 = {
+	type = character_event
+	title = sb_char_editor.traits.t
+	desc = sb_char_editor.traits.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = sb_char_editor.traits.special.t
+		scope:char_editor = { add_character_flag = special_trait_page_1 }
+		trigger_event = sb_char_editor.8
+	}
+
+	option = {
+		name = sb_char_editor.education.t
+		trigger_event = sb_char_editor.11
+	}
+
+	option = {
+		name = sb_char_editor.traits.personality.t
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = sb_char_editor.traits.stress.t
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = sb_char_editor.traits.congenital.t
+		trigger_event = sb_char_editor.19
+	}
+	
+	option = {
+		name = sb_char_editor.traits.commander.t
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = sb_char_editor.traits.health.t
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = sb_char_editor_main_menu
+		trigger_event = sb_char_editor.1000
+	}
+}
+
+### EDUCATION MENU ###
+
+sb_char_editor.11 = {
+	type = character_event
+	title = sb_char_editor.education.t
+	desc = sb_char_editor.education.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.traits.education.martial
+		trigger_event = sb_char_editor.33
+	}
+
+	option = {
+		name = sb_char_editor.traits.education.diplomacy
+		trigger_event = sb_char_editor.34
+	}
+
+	option = {
+		name = sb_char_editor.traits.education.stewardship
+		trigger_event = sb_char_editor.35
+	}
+
+	option = {
+		name = sb_char_editor.traits.education.intrigue
+		trigger_event = sb_char_editor.36
+	}
+
+	option = {
+		name = sb_char_editor.traits.education.learning
+		trigger_event = sb_char_editor.37
+	}
+
+	option = {
+		name = sb_char_editor.traits.education.martial.prowess
+		trigger_event = sb_char_editor.38
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### PERSONALITY TRAITS 1 ###
+
+sb_char_editor.12 = {
+	type = character_event
+	title = sb_char_editor.traits.personality.t
+	desc = sb_char_editor.traits.personality.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_lustful
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = lustful
+				}
+				remove_trait = lustful
+			}
+			else = {
+				add_trait = lustful
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = trait_chaste
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = chaste
+				}
+				remove_trait = chaste
+			}
+			else = {
+				add_trait = chaste
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = trait_gluttonous
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = gluttonous
+				}
+				remove_trait = gluttonous
+			}
+			else = {
+				add_trait = gluttonous
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = trait_temperate
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = temperate
+				}
+				remove_trait = temperate
+			}
+			else = {
+				add_trait = temperate
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = trait_greedy
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = greedy
+				}
+				remove_trait = greedy
+			}
+			else = {
+				add_trait = greedy
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = trait_generous
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = generous
+				}
+				remove_trait = generous
+			}
+			else = {
+				add_trait = generous
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = trait_lazy
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = lazy
+				}
+				remove_trait = lazy
+			}
+			else = {
+				add_trait = lazy
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = trait_diligent
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = diligent
+				}
+				remove_trait = diligent
+			}
+			else = {
+				add_trait = diligent
+			}
+		}
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### PERSONALITY TRAITS 2 ###
+
+sb_char_editor.13 = {
+	type = character_event
+	title = sb_char_editor.traits.personality.t
+	desc = sb_char_editor.traits.personality.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_wrathful
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = wrathful
+				}
+				remove_trait = wrathful
+			}
+			else = {
+				add_trait = wrathful
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = trait_calm
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = calm
+				}
+				remove_trait = calm
+			}
+			else = {
+				add_trait = calm
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = trait_patient
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = patient
+				}
+				remove_trait = patient
+			}
+			else = {
+				add_trait = patient
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = trait_impatient
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = impatient
+				}
+				remove_trait = impatient
+			}
+			else = {
+				add_trait = impatient
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = trait_arrogant
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = arrogant
+				}
+				remove_trait = arrogant
+			}
+			else = {
+				add_trait = arrogant
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = trait_humble
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = humble
+				}
+				remove_trait = humble
+			}
+			else = {
+				add_trait = humble
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = trait_deceitful
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = deceitful
+				}
+				remove_trait = deceitful
+			}
+			else = {
+				add_trait = deceitful
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = trait_honest
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = honest
+				}
+				remove_trait = honest
+			}
+			else = {
+				add_trait = honest
+			}
+		}
+		trigger_event = sb_char_editor.13
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### PERSONALITY TRAITS 3 ###
+
+sb_char_editor.14 = {
+	type = character_event
+	title = sb_char_editor.traits.personality.t
+	desc = sb_char_editor.traits.personality.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_craven
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = craven
+				}
+				remove_trait = craven
+			}
+			else = {
+				add_trait = craven
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = trait_brave
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = brave
+				}
+				remove_trait = brave
+			}
+			else = {
+				add_trait = brave
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = trait_shy
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = shy
+				}
+				remove_trait = shy
+			}
+			else = {
+				add_trait = shy
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = trait_gregarious
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = gregarious
+				}
+				remove_trait = gregarious
+			}
+			else = {
+				add_trait = gregarious
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = trait_ambitious
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = ambitious
+				}
+				remove_trait = ambitious
+			}
+			else = {
+				add_trait = ambitious
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = trait_content
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = content
+				}
+				remove_trait = content
+			}
+			else = {
+				add_trait = content
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = trait_arbitrary
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = arbitrary
+				}
+				remove_trait = arbitrary
+			}
+			else = {
+				add_trait = arbitrary
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = trait_just
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = just
+				}
+				remove_trait = just
+			}
+			else = {
+				add_trait = just
+			}
+		}
+		trigger_event = sb_char_editor.14
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### PERSONALITY TRAITS 4 ###
+
+sb_char_editor.15 = {
+	type = character_event
+	title = sb_char_editor.traits.personality.t
+	desc = sb_char_editor.traits.personality.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_zealous
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = zealous
+				}
+				remove_trait = zealous
+			}
+			else = {
+				add_trait = zealous
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = trait_cynical
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = cynical
+				}
+				remove_trait = cynical
+			}
+			else = {
+				add_trait = cynical
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = trait_paranoid
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = paranoid
+				}
+				remove_trait = paranoid
+			}
+			else = {
+				add_trait = paranoid
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = trait_trusting
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = trusting
+				}
+				remove_trait = trusting
+			}
+			else = {
+				add_trait = trusting
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = trait_compassionate
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = compassionate
+				}
+				remove_trait = compassionate
+			}
+			else = {
+				add_trait = compassionate
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = trait_callous
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = callous
+				}
+				remove_trait = callous
+			}
+			else = {
+				add_trait = callous
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = trait_sadistic
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = sadistic
+				}
+				remove_trait = sadistic
+			}
+			else = {
+				add_trait = sadistic
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = trait_stubborn
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = stubborn
+				}
+				remove_trait = stubborn
+			}
+			else = {
+				add_trait = stubborn
+			}
+		}
+		trigger_event = sb_char_editor.15
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.16
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### PERSONALITY TRAITS 5 ###
+
+sb_char_editor.16 = {
+	type = character_event
+	title = sb_char_editor.traits.personality.t
+	desc = sb_char_editor.traits.personality.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_fickle
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = fickle
+				}
+				remove_trait = fickle
+			}
+			else = {
+				add_trait = fickle
+			}
+		}
+		trigger_event = sb_char_editor.16
+	}
+
+	option = {
+		name = trait_vengeful
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = vengeful
+				}
+				remove_trait = vengeful
+			}
+			else = {
+				add_trait = vengeful
+			}
+		}
+		trigger_event = sb_char_editor.16
+	}
+
+	option = {
+		name = trait_forgiving
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = forgiving
+				}
+				remove_trait = forgiving
+			}
+			else = {
+				add_trait = forgiving
+			}
+		}
+		trigger_event = sb_char_editor.16
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.12
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### STRESS-RELATED TRAITS 1 ###
+
+sb_char_editor.17 = {
+	type = character_event
+	title = sb_char_editor.traits.stress.t
+	desc = sb_char_editor.traits.stress.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_athletic
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = athletic
+				}
+				remove_trait = athletic
+			}
+			else = {
+				add_trait = athletic
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = trait_confider
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = confider
+				}
+				remove_trait = confider
+			}
+			else = {
+				add_trait = confider
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = trait_journaller
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = journaller
+				}
+				remove_trait = journaller
+			}
+			else = {
+				add_trait = journaller
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = trait_inappetetic
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = inappetetic
+				}
+				remove_trait = inappetetic
+			}
+			else = {
+				add_trait = inappetetic
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = trait_comfort_eater
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = comfort_eater
+				}
+				remove_trait = comfort_eater
+			}
+			else = {
+				add_trait = comfort_eater
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = trait_contrite
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = contrite
+				}
+				remove_trait = contrite
+			}
+			else = {
+				add_trait = contrite
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = trait_improvident
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = improvident
+				}
+				remove_trait = improvident
+			}
+			else = {
+				add_trait = improvident
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = trait_profligate
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = profligate
+				}
+				remove_trait = profligate
+			}
+			else = {
+				add_trait = profligate
+			}
+		}
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.18
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### STRESS-RELATED TRAITS 2 ###
+
+sb_char_editor.18 = {
+	type = character_event
+	title = sb_char_editor.traits.stress.t
+	desc = sb_char_editor.traits.stress.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_flagellant
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = flagellant
+				}
+				remove_trait = flagellant
+			}
+			else = {
+				add_trait = flagellant
+			}
+		}
+		trigger_event = sb_char_editor.18
+	}
+
+	option = {
+		name = trait_irritable
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = irritable
+				}
+				remove_trait = irritable
+			}
+			else = {
+				add_trait = irritable
+			}
+		}
+		trigger_event = sb_char_editor.18
+	}
+
+	option = {
+		name = trait_reclusive
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = reclusive
+				}
+				remove_trait = reclusive
+			}
+			else = {
+				add_trait = reclusive
+			}
+		}
+		trigger_event = sb_char_editor.18
+	}
+
+	option = {
+		name = trait_rakish
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = rakish
+				}
+				remove_trait = rakish
+			}
+			else = {
+				add_trait = rakish
+			}
+		}
+		trigger_event = sb_char_editor.18
+	}
+
+	option = {
+		name = trait_hashishiyah
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = hashishiyah
+				}
+				remove_trait = hashishiyah
+			}
+			else = {
+				add_trait = hashishiyah
+			}
+		}
+		trigger_event = sb_char_editor.18
+	}
+
+	option = {
+		name = trait_drunkard
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = drunkard
+				}
+				remove_trait = drunkard
+			}
+			else = {
+				add_trait = drunkard
+			}
+		}
+		trigger_event = sb_char_editor.18
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.17
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### CONGENITAL TRAITS ###
+
+sb_char_editor.19 = {
+	type = character_event
+	title = sb_char_editor.traits.congenital.t
+	desc = sb_char_editor.traits.congenital.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_editor.traits.beauty.t
+		trigger_event = sb_char_editor.20
+	}
+
+	option = {
+		name = sb_char_editor.traits.intellect.t
+		trigger_event = sb_char_editor.21
+	}
+
+	option = {
+		name = sb_char_editor.traits.physique.t
+		trigger_event = sb_char_editor.22
+	}
+
+	option = {
+		name = sb_char_editor.traits.physical.good.t
+		trigger_event = sb_char_editor.23
+	}
+
+	option = {
+		name = sb_char_editor.traits.physical.bad.t
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### BEAUTY TRAITS ###
+
+sb_char_editor.20 = {
+	type = character_event
+	title = sb_char_editor.traits.beauty.t
+	desc = sb_char_editor.traits.beauty.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = trait_beauty_bad_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beauty_bad_3
+				}
+				remove_trait = beauty_bad_3
+			}
+			else = {
+				add_trait = beauty_bad_3
+			}
+		}
+		trigger_event = sb_char_editor.20
+	}
+
+	option = {
+		name = trait_beauty_bad_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beauty_bad_2
+				}
+				remove_trait = beauty_bad_2
+			}
+			else = {
+				add_trait = beauty_bad_2
+			}
+		}
+		trigger_event = sb_char_editor.20
+	}
+	
+	option = {
+		name = trait_beauty_bad_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beauty_bad_1
+				}
+				remove_trait = beauty_bad_1
+			}
+			else = {
+				add_trait = beauty_bad_1
+			}
+		}
+		trigger_event = sb_char_editor.20
+	}
+
+	option = {
+		name = trait_beauty_good_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beauty_good_1
+				}
+				remove_trait = beauty_good_1
+			}
+			else = {
+				add_trait = beauty_good_1
+			}
+		}
+		trigger_event = sb_char_editor.20
+	}
+
+	option = {
+		name = trait_beauty_good_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beauty_good_2
+				}
+				remove_trait = beauty_good_2
+			}
+			else = {
+				add_trait = beauty_good_2
+			}
+		}
+		trigger_event = sb_char_editor.20
+	}
+
+	option = {
+		name = trait_beauty_good_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = beauty_good_3
+				}
+				remove_trait = beauty_good_3
+			}
+			else = {
+				add_trait = beauty_good_3
+			}
+		}
+		trigger_event = sb_char_editor.20
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.19
+	}
+}
+
+### INTELLECT ###
+
+sb_char_editor.21 = {
+	type = character_event
+	title = sb_char_editor.traits.intellect.t
+	desc = sb_char_editor.traits.intellect.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = trait_intellect_bad_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = intellect_bad_3
+				}
+				remove_trait = intellect_bad_3
+			}
+			else = {
+				add_trait = intellect_bad_3
+			}
+		}
+		trigger_event = sb_char_editor.21
+	}
+
+	option = {
+		name = trait_intellect_bad_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = intellect_bad_2
+				}
+				remove_trait = intellect_bad_2
+			}
+			else = {
+				add_trait = intellect_bad_2
+			}
+		}
+		trigger_event = sb_char_editor.21
+	}
+
+	option = {
+		name = trait_intellect_bad_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = intellect_bad_1
+				}
+				remove_trait = intellect_bad_1
+			}
+			else = {
+				add_trait = intellect_bad_1
+			}
+		}
+		trigger_event = sb_char_editor.21
+	}
+
+	option = {
+		name = trait_intellect_good_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = intellect_good_1
+				}
+				remove_trait = intellect_good_1
+			}
+			else = {
+				add_trait = intellect_good_1
+			}
+		}
+		trigger_event = sb_char_editor.21
+	}
+
+	option = {
+		name = trait_intellect_good_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = intellect_good_2
+				}
+				remove_trait = intellect_good_2
+			}
+			else = {
+				add_trait = intellect_good_2
+			}
+		}
+		trigger_event = sb_char_editor.21
+	}
+
+	option = {
+		name = trait_intellect_good_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = intellect_good_3
+				}
+				remove_trait = intellect_good_3
+			}
+			else = {
+				add_trait = intellect_good_3
+			}
+		}
+		trigger_event = sb_char_editor.21
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.19
+	}
+}
+
+### PHYSIQUE ###
+
+sb_char_editor.22 = {
+	type = character_event
+	title = sb_char_editor.traits.physique.t
+	desc = sb_char_editor.traits.physique.t
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_physique_bad_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = physique_bad_3
+				}
+				remove_trait = physique_bad_3
+			}
+			else = {
+				add_trait = physique_bad_3
+			}
+		}
+		trigger_event = sb_char_editor.22
+	}
+
+	option = {
+		name = trait_physique_bad_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = physique_bad_2
+				}
+				remove_trait = physique_bad_2
+			}
+			else = {
+				add_trait = physique_bad_2
+			}
+		}
+		trigger_event = sb_char_editor.22
+	}
+
+	option = {
+		name = trait_physique_bad_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = physique_bad_1
+				}
+				remove_trait = physique_bad_1
+			}
+			else = {
+				add_trait = physique_bad_1
+			}
+		}
+		trigger_event = sb_char_editor.22
+	}
+
+	option = {
+		name = trait_physique_good_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = physique_good_1
+				}
+				remove_trait = physique_good_1
+			}
+			else = {
+				add_trait = physique_good_1
+			}
+		}
+		trigger_event = sb_char_editor.22
+	}
+
+	option = {
+		name = trait_physique_good_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = physique_good_2
+				}
+				remove_trait = physique_good_2
+			}
+			else = {
+				add_trait = physique_good_2
+			}
+		}
+		trigger_event = sb_char_editor.22
+	}
+
+	option = {
+		name = trait_physique_good_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = physique_good_3
+				}
+				remove_trait = physique_good_3
+			}
+			else = {
+				add_trait = physique_good_3
+			}
+		}
+		trigger_event = sb_char_editor.22
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.19
+	}
+}
+
+### PHYSICAL GOOD ###
+
+sb_char_editor.23 = {
+	type = character_event
+	title = sb_char_editor.traits.physical.good.t
+	desc = sb_char_editor.traits.physical.good.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_pure_blooded
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = pure_blooded
+				}
+				remove_trait = pure_blooded
+			}
+			else = {
+				add_trait = pure_blooded
+			}
+		}
+		trigger_event = sb_char_editor.23
+	}
+
+	option = {
+		name = trait_fecund
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = fecund
+				}
+				remove_trait = fecund
+			}
+			else = {
+				add_trait = fecund
+			}
+		}
+		trigger_event = sb_char_editor.23
+	}
+
+	option = {
+		name = trait_strong
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = strong
+				}
+				remove_trait = strong
+			}
+			else = {
+				add_trait = strong
+			}
+		}
+		trigger_event = sb_char_editor.23
+	}
+	
+	option = {
+		name = trait_shrewd
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = shrewd
+				}
+				remove_trait = shrewd
+			}
+			else = {
+				add_trait = shrewd
+			}
+		}
+		trigger_event = sb_char_editor.23
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.19
+	}
+}
+
+### PHYSICAL BAD 1 ###
+
+sb_char_editor.24 = {
+	type = character_event
+	title = sb_char_editor.traits.physical.bad.t
+	desc = sb_char_editor.traits.physical.bad.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_dwarf
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = dwarf
+				}
+				remove_trait = dwarf
+			}
+			else = {
+				add_trait = dwarf
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = trait_giant
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = giant
+				}
+				remove_trait = giant
+			}
+			else = {
+				add_trait = giant
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+	
+	option = {
+		name = trait_albino
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = albino
+				}
+				remove_trait = albino
+			}
+			else = {
+				add_trait = albino
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = trait_weak
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = weak
+				}
+				remove_trait = weak
+			}
+			else = {
+				add_trait = weak
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = trait_dull
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = dull
+				}
+				remove_trait = dull
+			}
+			else = {
+				add_trait = dull
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = trait_infertile
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = infertile
+				}
+				remove_trait = infertile
+			}
+			else = {
+				add_trait = infertile
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = trait_bleeder
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = bleeder
+				}
+				remove_trait = bleeder
+			}
+			else = {
+				add_trait = bleeder
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = trait_wheezing
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = wheezing
+				}
+				remove_trait = wheezing
+			}
+			else = {
+				add_trait = wheezing
+			}
+		}
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.19
+	}
+}
+
+### PHYSICAL BAD 2 ###
+
+sb_char_editor.25 = {
+	type = character_event
+	title = sb_char_editor.traits.physical.bad.t
+	desc = sb_char_editor.traits.physical.bad.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_scaly
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = scaly
+				}
+				remove_trait = scaly
+			}
+			else = {
+				add_trait = scaly
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = trait_spindly
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = spindly
+				}
+				remove_trait = spindly
+			}
+			else = {
+				add_trait = spindly
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = trait_impotent
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = impotent
+				}
+				remove_trait = impotent
+			}
+			else = {
+				add_trait = impotent
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = trait_inbred
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = inbred
+				}
+				remove_trait = inbred
+			}
+			else = {
+				add_trait = inbred
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = trait_stuttering
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = stuttering
+				}
+				remove_trait = stuttering
+			}
+			else = {
+				add_trait = stuttering
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = trait_lisping
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = lisping
+				}
+				remove_trait = lisping
+			}
+			else = {
+				add_trait = lisping
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = trait_hunchbacked
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = hunchbacked
+				}
+				remove_trait = hunchbacked
+			}
+			else = {
+				add_trait = hunchbacked
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = trait_clubfooted
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = clubfooted
+				}
+				remove_trait = clubfooted
+			}
+			else = {
+				add_trait = clubfooted
+			}
+		}
+		trigger_event = sb_char_editor.25
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.24
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.19
+	}
+}
+
+### COMMANDER TRAITS 1 ###
+
+sb_char_editor.26 = {
+	type = character_event
+	title = sb_char_editor.traits.commander.t
+	desc = sb_char_editor.traits.commander.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_logistician
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = logistician
+				}
+				remove_trait = logistician
+			}
+			else = {
+				add_trait = logistician
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = trait_military_engineer
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = military_engineer
+				}
+				remove_trait = military_engineer
+			}
+			else = {
+				add_trait = military_engineer
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = trait_aggressive_attacker
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = aggressive_attacker
+				}
+				remove_trait = aggressive_attacker
+			}
+			else = {
+				add_trait = aggressive_attacker
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = trait_unyielding_defender
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = unyielding_defender
+				}
+				remove_trait = unyielding_defender
+			}
+			else = {
+				add_trait = unyielding_defender
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = trait_forder
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = forder
+				}
+				remove_trait = forder
+			}
+			else = {
+				add_trait = forder
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = trait_flexible_leader
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = flexible_leader
+				}
+				remove_trait = flexible_leader
+			}
+			else = {
+				add_trait = flexible_leader
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = trait_desert_warrior
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = desert_warrior
+				}
+				remove_trait = desert_warrior
+			}
+			else = {
+				add_trait = desert_warrior
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = trait_jungle_stalker
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = jungle_stalker
+				}
+				remove_trait = jungle_stalker
+			}
+			else = {
+				add_trait = jungle_stalker
+			}
+		}
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### COMMANDER TRAITS 2 ###
+
+sb_char_editor.27 = {
+	type = character_event
+	title = sb_char_editor.traits.commander.t
+	desc = sb_char_editor.traits.commander.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_reaver
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = reaver
+				}
+				remove_trait = reaver
+			}
+			else = {
+				add_trait = reaver
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = trait_reckless
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = reckless
+				}
+				remove_trait = reckless
+			}
+			else = {
+				add_trait = reckless
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = trait_holy_warrior
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = holy_warrior
+				}
+				remove_trait = holy_warrior
+			}
+			else = {
+				add_trait = holy_warrior
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = trait_open_terrain_expert
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = open_terrain_expert
+				}
+				remove_trait = open_terrain_expert
+			}
+			else = {
+				add_trait = open_terrain_expert
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = trait_rough_terrain_expert
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = rough_terrain_expert
+				}
+				remove_trait = rough_terrain_expert
+			}
+			else = {
+				add_trait = rough_terrain_expert
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = trait_forest_fighter
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = forest_fighter
+				}
+				remove_trait = forest_fighter
+			}
+			else = {
+				add_trait = forest_fighter
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = trait_cautious_leader
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = cautious_leader
+				}
+				remove_trait = cautious_leader
+			}
+			else = {
+				add_trait = cautious_leader
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = trait_organizer
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = organizer
+				}
+				remove_trait = organizer
+			}
+			else = {
+				add_trait = organizer
+			}
+		}
+		trigger_event = sb_char_editor.27
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.26
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### HEALTH ISSUES 1 ###
+
+sb_char_editor.28 = {
+	type = character_event
+	title = sb_char_editor.traits.health.t
+	desc = sb_char_editor.traits.health.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_depressed_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = depressed_1
+				}
+				remove_trait = depressed_1
+			}
+			else = {
+				add_trait = depressed_1
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = sb_char_editor.traits.health.depressed_genetic
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = depressed_genetic
+				}
+				remove_trait = depressed_genetic
+			}
+			else = {
+				add_trait = depressed_genetic
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = trait_lunatic_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = lunatic_1
+				}
+				remove_trait = lunatic_1
+			}
+			else = {
+				add_trait = lunatic_1
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = sb_char_editor.traits.health.lunatic_genetic
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = lunatic_genetic
+				}
+				remove_trait = lunatic_genetic
+			}
+			else = {
+				add_trait = lunatic_genetic
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = trait_possessed_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = possessed_1
+				}
+				remove_trait = possessed_1
+			}
+			else = {
+				add_trait = possessed_1
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = sb_char_editor.traits.health.possessed_genetic
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = possessed_genetic
+				}
+				remove_trait = possessed_genetic
+			}
+			else = {
+				add_trait = possessed_genetic
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = trait_ill
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = ill
+				}
+				remove_trait = ill
+			}
+			else = {
+				add_trait = ill
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = trait_pneumonic
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = pneumonic
+				}
+				remove_trait = pneumonic
+			}
+			else = {
+				add_trait = pneumonic
+			}
+		}
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### HEALTH ISSUES 2 ###
+
+sb_char_editor.29 = {
+	type = character_event
+	title = sb_char_editor.traits.health.t
+	desc = sb_char_editor.traits.health.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = trait_early_great_pox
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = early_great_pox
+				}
+				remove_trait = early_great_pox
+			}
+			else = {
+				add_trait = early_great_pox
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = trait_great_pox
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = great_pox
+				}
+				remove_trait = great_pox
+			}
+			else = {
+				add_trait = great_pox
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = trait_lovers_pox
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = lovers_pox
+				}
+				remove_trait = lovers_pox
+			}
+			else = {
+				add_trait = lovers_pox
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = trait_leper
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = leper
+				}
+				remove_trait = leper
+			}
+			else = {
+				add_trait = leper
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = trait_wounded_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = wounded_1
+				}
+				remove_trait = wounded_1
+			}
+			else = {
+				add_trait = wounded_1
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = trait_wounded_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = wounded_2
+				}
+				remove_trait = wounded_2
+			}
+			else = {
+				add_trait = wounded_2
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = trait_wounded_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = wounded_3
+				}
+				remove_trait = wounded_3
+			}
+			else = {
+				add_trait = wounded_3
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = trait_maimed
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = maimed
+				}
+				remove_trait = maimed
+			}
+			else = {
+				add_trait = maimed
+			}
+		}
+		trigger_event = sb_char_editor.29
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### HEALTH ISSUES 3 ###
+
+sb_char_editor.30 = {
+	type = character_event
+	title = sb_char_editor.traits.health.t
+	desc = sb_char_editor.traits.health.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_one_eyed
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = one_eyed
+				}
+				remove_trait = one_eyed
+			}
+			else = {
+				add_trait = one_eyed
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = trait_one_legged
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = one_legged
+				}
+				remove_trait = one_legged
+			}
+			else = {
+				add_trait = one_legged
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = trait_disfigured
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = disfigured
+				}
+				remove_trait = disfigured
+			}
+			else = {
+				add_trait = disfigured
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = trait_infirm
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = infirm
+				}
+				remove_trait = infirm
+			}
+			else = {
+				add_trait = infirm
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = trait_incapable
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = incapable
+				}
+				remove_trait = incapable
+			}
+			else = {
+				add_trait = incapable
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = trait_gout_ridden
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = gout_ridden
+				}
+				remove_trait = gout_ridden
+			}
+			else = {
+				add_trait = gout_ridden
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = trait_consumption
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = consumption
+				}
+				remove_trait = consumption
+			}
+			else = {
+				add_trait = consumption
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = trait_cancer
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = cancer
+				}
+				remove_trait = cancer
+			}
+			else = {
+				add_trait = cancer
+			}
+		}
+		trigger_event = sb_char_editor.30
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### HEALTH ISSUES 4 ###
+
+sb_char_editor.31 = {
+	type = character_event
+	title = sb_char_editor.traits.health.t
+	desc = sb_char_editor.traits.health.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_typhus
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = typhus
+				}
+				remove_trait = typhus
+			}
+			else = {
+				add_trait = typhus
+			}
+		}
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = trait_bubonic_plague
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = bubonic_plague
+				}
+				remove_trait = bubonic_plague
+			}
+			else = {
+				add_trait = bubonic_plague
+			}
+		}
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = trait_smallpox
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = smallpox
+				}
+				remove_trait = smallpox
+			}
+			else = {
+				add_trait = smallpox
+			}
+		}
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = trait_sickly
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = sickly
+				}
+				remove_trait = sickly
+			}
+			else = {
+				add_trait = sickly
+			}
+		}
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = trait_scarred
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = scarred
+				}
+				remove_trait = scarred
+			}
+			else = {
+				add_trait = scarred
+			}
+		}
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = trait_eunuch
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = eunuch
+				}
+				remove_trait = eunuch
+			}
+			else = {
+				add_trait = eunuch
+			}
+		}
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = trait_blind
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = blind
+				}
+				remove_trait = blind
+			}
+			else = {
+				add_trait = blind
+			}
+		}
+		trigger_event = sb_char_editor.31
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger_event = sb_char_editor.28
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.10
+	}
+}
+
+### SEXUALITY ###
+
+sb_char_editor.32 = {
+	type = character_event
+	title = sb_char_editor.sexuality.t
+	desc = sb_char_editor.sexuality.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = game_concept_heterosexual
+		scope:char_editor = {
+			set_sexuality = heterosexual
+		}
+		trigger_event = sb_char_editor.32
+	}
+
+	option = {
+		name = game_concept_homosexual
+		scope:char_editor = {
+			set_sexuality = homosexual
+		}
+		trigger_event = sb_char_editor.32
+	}
+
+	option = {
+		name = game_concept_bisexual
+		scope:char_editor = {
+			set_sexuality = bisexual
+		}
+		trigger_event = sb_char_editor.32
+	}
+
+	option = {
+		name = game_concept_asexual
+		scope:char_editor = {
+			set_sexuality = asexual
+		}
+		trigger_event = sb_char_editor.32
+	}
+
+	option = {
+		name = sb_char_editor_main_menu
+		trigger_event = sb_char_editor.1000
+	}
+}
+
+### MARTIAL EDUCATION ###
+
+sb_char_editor.33 = {
+	type = character_event
+	title = sb_char_editor.education.t
+	desc = sb_char_editor.education.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_education_martial_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_1
+				}
+				remove_trait = education_martial_1
+			}
+			else = {
+				add_trait = education_martial_1
+			}
+		}
+		trigger_event = sb_char_editor.33
+	}
+	
+	option = {
+		name = trait_education_martial_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_2
+				}
+				remove_trait = education_martial_2
+			}
+			else = {
+				add_trait = education_martial_2
+			}
+		}
+		trigger_event = sb_char_editor.33
+	}
+
+	option = {
+		name = trait_education_martial_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_3
+				}
+				remove_trait = education_martial_3
+			}
+			else = {
+				add_trait = education_martial_3
+			}
+		}
+		trigger_event = sb_char_editor.33
+	}
+
+	option = {
+		name = trait_education_martial_4
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_4
+				}
+				remove_trait = education_martial_4
+			}
+			else = {
+				add_trait = education_martial_4
+			}
+		}
+		trigger_event = sb_char_editor.33
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.11
+	}
+}
+
+### DIPLOMACY EDUCATION ###
+
+sb_char_editor.34 = {
+	type = character_event
+	title = sb_char_editor.education.t
+	desc = sb_char_editor.education.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_education_diplomacy_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_diplomacy_1
+				}
+				remove_trait = education_diplomacy_1
+			}
+			else = {
+				add_trait = education_diplomacy_1
+			}
+		}
+		trigger_event = sb_char_editor.34
+	}
+	
+	option = {
+		name = trait_education_diplomacy_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_diplomacy_2
+				}
+				remove_trait = education_diplomacy_2
+			}
+			else = {
+				add_trait = education_diplomacy_2
+			}
+		}
+		trigger_event = sb_char_editor.34
+	}
+
+	option = {
+		name = trait_education_diplomacy_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_diplomacy_3
+				}
+				remove_trait = education_diplomacy_3
+			}
+			else = {
+				add_trait = education_diplomacy_3
+			}
+		}
+		trigger_event = sb_char_editor.34
+	}
+
+	option = {
+		name = trait_education_diplomacy_4
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_diplomacy_4
+				}
+				remove_trait = education_diplomacy_4
+			}
+			else = {
+				add_trait = education_diplomacy_4
+			}
+		}
+		trigger_event = sb_char_editor.34
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.11
+	}
+}
+
+### STEWARDSHIP EDUCATION ###
+
+sb_char_editor.35 = {
+	type = character_event
+	title = sb_char_editor.education.t
+	desc = sb_char_editor.education.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_education_stewardship_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_stewardship_1
+				}
+				remove_trait = education_stewardship_1
+			}
+			else = {
+				add_trait = education_stewardship_1
+			}
+		}
+		trigger_event = sb_char_editor.35
+	}
+	
+	option = {
+		name = trait_education_stewardship_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_stewardship_2
+				}
+				remove_trait = education_stewardship_2
+			}
+			else = {
+				add_trait = education_stewardship_2
+			}
+		}
+		trigger_event = sb_char_editor.35
+	}
+
+	option = {
+		name = trait_education_stewardship_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_stewardship_3
+				}
+				remove_trait = education_stewardship_3
+			}
+			else = {
+				add_trait = education_stewardship_3
+			}
+		}
+		trigger_event = sb_char_editor.35
+	}
+
+	option = {
+		name = trait_education_stewardship_4
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_stewardship_4
+				}
+				remove_trait = education_stewardship_4
+			}
+			else = {
+				add_trait = education_stewardship_4
+			}
+		}
+		trigger_event = sb_char_editor.35
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.11
+	}
+}
+
+### INTRIGUE EDUCATION ###
+
+sb_char_editor.36 = {
+	type = character_event
+	title = sb_char_editor.education.t
+	desc = sb_char_editor.education.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_education_intrigue_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_intrigue_1
+				}
+				remove_trait = education_intrigue_1
+			}
+			else = {
+				add_trait = education_intrigue_1
+			}
+		}
+		trigger_event = sb_char_editor.36
+	}
+	
+	option = {
+		name = trait_education_intrigue_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_intrigue_2
+				}
+				remove_trait = education_intrigue_2
+			}
+			else = {
+				add_trait = education_intrigue_2
+			}
+		}
+		trigger_event = sb_char_editor.36
+	}
+
+	option = {
+		name = trait_education_intrigue_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_intrigue_3
+				}
+				remove_trait = education_intrigue_3
+			}
+			else = {
+				add_trait = education_intrigue_3
+			}
+		}
+		trigger_event = sb_char_editor.36
+	}
+
+	option = {
+		name = trait_education_intrigue_4
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_intrigue_4
+				}
+				remove_trait = education_intrigue_4
+			}
+			else = {
+				add_trait = education_intrigue_4
+			}
+		}
+		trigger_event = sb_char_editor.36
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.11
+	}
+}
+
+### LEARNING EDUCATION ###
+
+sb_char_editor.37 = {
+	type = character_event
+	title = sb_char_editor.education.t
+	desc = sb_char_editor.education.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_education_learning_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_learning_1
+				}
+				remove_trait = education_learning_1
+			}
+			else = {
+				add_trait = education_learning_1
+			}
+		}
+		trigger_event = sb_char_editor.37
+	}
+	
+	option = {
+		name = trait_education_learning_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_learning_2
+				}
+				remove_trait = education_learning_2
+			}
+			else = {
+				add_trait = education_learning_2
+			}
+		}
+		trigger_event = sb_char_editor.37
+	}
+
+	option = {
+		name = trait_education_learning_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_learning_3
+				}
+				remove_trait = education_learning_3
+			}
+			else = {
+				add_trait = education_learning_3
+			}
+		}
+		trigger_event = sb_char_editor.37
+	}
+
+	option = {
+		name = trait_education_learning_4
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_learning_4
+				}
+				remove_trait = education_learning_4
+			}
+			else = {
+				add_trait = education_learning_4
+			}
+		}
+		trigger_event = sb_char_editor.37
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.11
+	}
+}
+
+### PROWESS EDUCATION ###
+
+sb_char_editor.38 = {
+	type = character_event
+	title = sb_char_editor.education.t
+	desc = sb_char_editor.education.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	option = {
+		name = trait_education_martial_prowess_1
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_prowess_1
+				}
+				remove_trait = education_martial_prowess_1
+			}
+			else = {
+				add_trait = education_martial_prowess_1
+			}
+		}
+		trigger_event = sb_char_editor.38
+	}
+	
+	option = {
+		name = trait_education_martial_prowess_2
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_prowess_2
+				}
+				remove_trait = education_martial_prowess_2
+			}
+			else = {
+				add_trait = education_martial_prowess_2
+			}
+		}
+		trigger_event = sb_char_editor.38
+	}
+
+	option = {
+		name = trait_education_martial_prowess_3
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_prowess_3
+				}
+				remove_trait = education_martial_prowess_3
+			}
+			else = {
+				add_trait = education_martial_prowess_3
+			}
+		}
+		trigger_event = sb_char_editor.38
+	}
+
+	option = {
+		name = trait_education_martial_prowess_4
+		scope:char_editor = {
+			if = {
+				limit = {
+					has_trait = education_martial_prowess_4
+				}
+				remove_trait = education_martial_prowess_4
+			}
+			else = {
+				add_trait = education_martial_prowess_4
+			}
+		}
+		trigger_event = sb_char_editor.38
+	}
+
+	option = {
+		name = sb_char_editor_back
+		trigger_event = sb_char_editor.11
+	}
+}
+
+### CULTURE GROUP ###
+
+sb_char_editor.39 = {
+	type = character_event
+	title = sb_char_editor.culture.group.t
+	desc = sb_char_editor.culture.group.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = akan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = akan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:akan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kru
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = akan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kru
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = guan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = akan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:guan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bedouin
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = arabic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bedouin
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = levantine
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = arabic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:levantine
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = egyptian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = arabic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:egyptian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = maghrebi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = arabic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:maghrebi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = andalusian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = arabic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:andalusian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = yemeni
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = arabic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:yemeni
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = latgalian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = baltic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:latgalian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = lithuanian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = baltic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:lithuanian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = prussian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = baltic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:prussian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = finnish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = balto_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:finnish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sami
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = balto_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sami
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = estonian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = balto_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:estonian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = karelian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = balto_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:karelian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = vepsian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = balto_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:vepsian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = butr
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = berber_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:butr
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = baranis
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = berber_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:baranis
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = zaghawa
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = berber_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:zaghawa
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = pictish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = brythonic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:pictish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = welsh
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = brythonic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:welsh
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = breton
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = brythonic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:breton
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = cornish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = brythonic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:cornish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = cumbrian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = brythonic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:cumbrian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = burmese
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = burman_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:burmese
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mon
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = burman_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:mon
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = armenian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = byzantine_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:armenian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = greek
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = byzantine_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:greek
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = alan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = byzantine_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:alan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = georgian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = byzantine_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:georgian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = assyrian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = byzantine_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:assyrian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kanuri
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kanuri
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = hausa
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:hausa
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sao
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sao
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = nupe
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:nupe
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = saxon
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:saxon
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = franconian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:franconian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = swabian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:swabian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bavarian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bavarian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = frisian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:frisian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = dutch
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:dutch
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = german
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = central_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:german
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = han
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = chinese_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:han
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = tamil
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dravidian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:tamil
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = telugu
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dravidian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:telugu
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kannada
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dravidian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kannada
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = ethiopian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:ethiopian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = nubian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:nubian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = welayta
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:welayta
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = daju
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:daju
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = russian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:russian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = ilmenian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:ilmenian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = severian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:severian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = volhynian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = east_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:volhynian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = frankish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = frankish_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:frankish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = french
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = frankish_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:french
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = norman
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = frankish_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:norman
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = occitan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = frankish_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:occitan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = outremer
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = frankish_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:outremer
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = irish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = goidelic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:irish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = gaelic
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = goidelic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:gaelic
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = basque
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:basque
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = castilian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:castilian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = catalan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:catalan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = portuguese
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:portuguese
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = visigothic
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:visigothic
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = galician
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:galician
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = asturleonese
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:asturleonese
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = aragonese
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:aragonese
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = suebi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iberian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:suebi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bengali
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bengali
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = oriya
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:oriya
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = assamese
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:assamese
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = hindustani
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:hindustani
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = gujarati
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:gujarati
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = punjabi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:punjabi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = rajput
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:rajput
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sindhi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sindhi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = indo_aryan_culture_group
+			add_character_flag = indo_aryan_culture_group_2
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = marathi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:marathi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kashmiri
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kashmiri
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sinhala
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sinhala
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = nepali
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:nepali
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = indo_aryan_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = indo_aryan_culture_group_2
+			add_character_flag = indo_aryan_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = persian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:persian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sogdian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sogdian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = tocharian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:tocharian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kurdish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kurdish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = afghan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:afghan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = baloch
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:baloch
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = saka
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:saka
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = daylamite
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:daylamite
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = khwarezmian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:khwarezmian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = tajik
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = iranian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:tajik
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = ashkenazi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = israelite_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:ashkenazi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sephardi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = israelite_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sephardi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = italian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = latin_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:italian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = roman
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = latin_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:roman
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = cisalpine
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = latin_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:cisalpine
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sardinian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = latin_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sardinian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sicilian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = latin_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sicilian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = lombard
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = latin_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:lombard
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mogyer
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = magyar_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:mogyer
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = hungarian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = magyar_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:hungarian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mongol
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:mongol
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = buryat
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:buryat
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = oirat
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:oirat
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = naiman
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:naiman
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kerait
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kerait
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = khitan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:khitan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = tuyuhun
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:tuyuhun
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = jurchen
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mongolic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:jurchen
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = norse
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = north_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:norse
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = swedish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = north_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:swedish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = norwegian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = north_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:norwegian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = danish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = north_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:danish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = tangut
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = qiangic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:tangut
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = qiang
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = qiangic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:qiang
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = soninke
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = sahelian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:soninke
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bozo
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = sahelian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bozo
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mossi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = sahelian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:mossi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sorko
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = sahelian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sorko
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = gaw
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = sahelian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:gaw
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = songhai
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = sahelian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:songhai
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = pulaar
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = senegambian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:pulaar
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = serer
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = senegambian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:serer
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = wolof
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = senegambian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:wolof
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = somali
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = somalian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:somali
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = beja
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = somalian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:beja
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = afar
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = somalian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:afar
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = croatian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = south_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:croatian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bosnian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = south_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bosnian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = serbian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = south_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:serbian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = vlach
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = south_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:vlach
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bulgarian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = south_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bulgarian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bodpa
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tibetan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bodpa
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = zhangzhung
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tibetan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:zhangzhung
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sumpa
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tibetan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:sumpa
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = tsangpa
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tibetan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:tsangpa
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kirati
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tibetan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kirati
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = lhomon
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tibetan_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:lhomon
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = turkish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:turkish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = pecheneg
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:pecheneg
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = khazar
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:khazar
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = cuman
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:cuman
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bolghar
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bolghar
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bashkir
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bashkir
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = avar
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:avar
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = karluk
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:karluk
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kimek
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kimek
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = turkic_culture_group
+			add_character_flag = turkic_culture_group_2
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kipchak
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kipchak
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = laktan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:laktan
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = kirghiz
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:kirghiz
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = uyghur
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:uyghur
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = yughur
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:yughur
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = uriankhai
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:uriankhai
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = chuvash
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:chuvash
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = shatuo
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:shatuo
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = ongud
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:ongud
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = turkic_culture_group_2
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = turkic_culture_group_2
+			add_character_flag = turkic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = komi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = ugro_permian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:komi
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = khanty
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = ugro_permian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:khanty
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = samoyed
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = ugro_permian_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:samoyed
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mordvin
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = volga_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:mordvin
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = merya
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = volga_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:merya
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = meshchera
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = volga_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:meshchera
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mari
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = volga_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:mari
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = muroma
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = volga_finnic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:muroma
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = malinke
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:malinke
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = bobo
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:bobo
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = gur
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:gur
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = marka
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:marka
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mel
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_african_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:mel
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = english
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:english
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = anglo_saxon
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:anglo_saxon
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = old_saxon
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:old_saxon
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = scottish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_germanic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:scottish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = pommeranian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:pommeranian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = czech
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:czech
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = polish
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:polish
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = polabian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:polabian
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = slovien
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_slavic_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:slovien
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = ewe
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = yoruba_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:ewe
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = igbo
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = yoruba_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:igbo
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = edo
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = yoruba_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:edo
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = yoruba
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = yoruba_culture_group
+			}
+		}
+		scope:char_editor = {
+			set_culture = culture:yoruba
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sb_char_editor_back
+		scope:char_editor = {
+			remove_character_flag = akan_culture_group
+			remove_character_flag = arabic_culture_group
+			remove_character_flag = baltic_culture_group
+			remove_character_flag = balto_finnic_culture_group
+			remove_character_flag = berber_culture_group
+			remove_character_flag = brythonic_culture_group
+			remove_character_flag = burman_culture_group
+			remove_character_flag = byzantine_culture_group
+			remove_character_flag = central_african_culture_group
+			remove_character_flag = central_germanic_culture_group
+			remove_character_flag = chinese_culture_group
+			remove_character_flag = dravidian_culture_group
+			remove_character_flag = east_african_culture_group
+			remove_character_flag = east_slavic_culture_group
+			remove_character_flag = frankish_culture_group
+			remove_character_flag = goidelic_culture_group
+			remove_character_flag = iberian_culture_group
+			remove_character_flag = indo_aryan_culture_group
+			remove_character_flag = indo_aryan_culture_group_2
+			remove_character_flag = iranian_culture_group
+			remove_character_flag = israelite_culture_group
+			remove_character_flag = latin_culture_group
+			remove_character_flag = magyar_culture_group
+			remove_character_flag = mongolic_culture_group
+			remove_character_flag = north_germanic_culture_group
+			remove_character_flag = qiangic_culture_group
+			remove_character_flag = sahelian_culture_group
+			remove_character_flag = senegambian_culture_group
+			remove_character_flag = somalian_culture_group
+			remove_character_flag = south_slavic_culture_group
+			remove_character_flag = tibetan_culture_group
+			remove_character_flag = turkic_culture_group
+			remove_character_flag = turkic_culture_group_2
+			remove_character_flag = ugro_permian_culture_group
+			remove_character_flag = volga_finnic_culture_group
+			remove_character_flag = west_african_culture_group
+			remove_character_flag = west_germanic_culture_group
+			remove_character_flag = west_slavic_culture_group
+			remove_character_flag = yoruba_culture_group
+		}
+		trigger_event = sb_char_editor.40
+	}
+}
+
+### CULTURE PAGES ###
+
+sb_char_editor.40 = {
+	type = character_event
+	title = sb_char_editor.culture.group.t
+	desc = sb_char_editor.culture.group.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = akan_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = akan_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = arabic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = arabic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = baltic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = baltic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = balto_finnic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = balto_finnic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = berber_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = berber_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = brythonic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = brythonic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = burman_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = burman_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = byzantine_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = byzantine_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = central_african_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = central_african_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = central_germanic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = central_germanic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = chinese_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = chinese_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = dravidian_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = dravidian_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = east_african_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = east_african_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = east_slavic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = east_slavic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = frankish_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = frankish_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = goidelic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = goidelic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = iberian_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = iberian_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = indo_aryan_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = indo_aryan_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = iranian_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = iranian_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = israelite_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = israelite_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = latin_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = latin_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = magyar_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = magyar_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = mongolic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = mongolic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = north_germanic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = north_germanic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = qiangic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = qiangic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sahelian_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = sahelian_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = senegambian_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = senegambian_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = somalian_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = somalian_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = south_slavic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = south_slavic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = tibetan_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = tibetan_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = turkic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = turkic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = ugro_permian_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_5
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = ugro_permian_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = volga_finnic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_5
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = volga_finnic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = west_african_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_5
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = west_african_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = west_germanic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_5
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = west_germanic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = west_slavic_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_5
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = west_slavic_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = yoruba_group
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_5
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = yoruba_culture_group
+		}
+		trigger_event = sb_char_editor.39
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_1
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = culture_page_1
+			add_character_flag = culture_page_2
+		}
+		trigger_event = sb_char_editor.40
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_2
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = culture_page_2
+			add_character_flag = culture_page_3
+		}
+		trigger_event = sb_char_editor.40
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_3
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = culture_page_3
+			add_character_flag = culture_page_4
+		}
+		trigger_event = sb_char_editor.40
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_4
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = culture_page_4
+			add_character_flag = culture_page_5
+		}
+		trigger_event = sb_char_editor.40
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = culture_page_5
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = culture_page_5
+			add_character_flag = culture_page_1
+		}
+		trigger_event = sb_char_editor.40
+	}
+
+	option = {
+		name = sb_char_editor_main_menu
+		scope:char_editor = {
+			remove_character_flag = culture_page_1
+			remove_character_flag = culture_page_2
+			remove_character_flag = culture_page_3
+			remove_character_flag = culture_page_4
+			remove_character_flag = culture_page_5
+		}
+		trigger_event = sb_char_editor.1000
+	}
+}
+
+### RELIGION PAGES ###
+
+sb_char_editor.41 = {
+	type = character_event
+	title = sb_char_editor.religion.group.t
+	desc = sb_char_editor.religion.group.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = christianity_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = christianity_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = judaism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = judaism_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = islam_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = islam_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = taoism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = taoism_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = buddhism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = buddhism_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = hinduism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = hinduism_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = jainism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = jainism_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = bon_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = bon_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = tani_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = tani_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = dualism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = dualism_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = mundhum_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = mundhum_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = qiangic_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = qiangic_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = yazidi_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = yazidi_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = zoroastrianism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = zoroastrianism_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = west_african_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			add_character_flag = west_african_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = norse_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:norse_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = hellenic_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:hellenic_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = akom_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:akom_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = baltic_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:baltic_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = finnish_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:finnish_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = kushitism_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:kushitism_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = magyar_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:magyar_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = paganism_religion
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = slavic_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:slavic_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = tengri_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_4
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:tengri_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = waaqism_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_4
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:waaqism_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = west_african_bori_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_4
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:west_african_bori_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = west_african_orisha_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_4
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:west_african_orisha_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = west_african_roog_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_4
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:west_african_roog_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = zun_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_4
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:zun_pagan
+		}
+		trigger_event = sb_char_editor.41
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_1
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = religion_page_1
+			add_character_flag = religion_page_2
+		}
+		trigger_event = sb_char_editor.41
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_2
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = religion_page_2
+			add_character_flag = religion_page_3
+		}
+		trigger_event = sb_char_editor.41
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_3
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = religion_page_3
+			add_character_flag = religion_page_4
+		}
+		trigger_event = sb_char_editor.41
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_page_4
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = religion_page_4
+			add_character_flag = religion_page_1
+		}
+		trigger_event = sb_char_editor.41
+	}
+
+	option = {
+		name = sb_char_editor_main_menu
+		scope:char_editor = {
+			remove_character_flag = religion_page_1
+			remove_character_flag = religion_page_2
+			remove_character_flag = religion_page_3
+			remove_character_flag = religion_page_4
+		}
+		trigger_event = sb_char_editor.1000
+	}
+}
+
+### RELIGION GROUP ###
+
+sb_char_editor.42 = {
+	type = character_event
+	title = sb_char_editor.religion.group.t
+	desc = sb_char_editor.religion.group.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	option = {
+		name = bon
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = bon_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:bon
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = old_bon
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = bon_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:old_bon
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = theravada
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = buddhism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:theravada
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = mahayana
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = buddhism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:mahayana
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = vajrayana
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = buddhism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:vajrayana
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = ari
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = buddhism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:ari
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = lamaism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = buddhism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:lamaism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = orthodox
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:orthodox
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = coptic
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:coptic
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = armenian_apostolic
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:armenian_apostolic
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = catholic
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:catholic
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = conversos
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:conversos
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = cathar
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:cathar
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = waldensian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:waldensian
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = lollard
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:lollard
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = iconoclast
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:iconoclast
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = bogomilist
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:bogomilist
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = paulician
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:paulician
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = nestorian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:nestorian
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = messalian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:messalian
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = adamites
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:adamites
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = insular_celtic
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:insular_celtic
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = bosnian_church
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:bosnian_church
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = manichean
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dualism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:manichean
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = mandeaism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dualism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:mandeaism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = sabianism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dualism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:sabianism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = valentinianism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dualism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:valentinianism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = sethianism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dualism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:sethianism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = priscillianism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dualism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:priscillianism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = cainitism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = dualism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:cainitism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = donyipoloism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tani_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:donyipoloism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = sedism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = tani_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:sedism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = vaishnavism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = hinduism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:vaishnavism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = advaitism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = hinduism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:advaitism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = shaivism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = hinduism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:shaivism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = srikula_shaktism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = hinduism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:srikula_shaktism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = kalikula_shaktism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = hinduism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:kalikula_shaktism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = smartism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = hinduism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:smartism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = krishnaism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = hinduism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:krishnaism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = ashari
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:ashari
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = muwalladi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:muwalladi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = maturidi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:maturidi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = masmudi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:masmudi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = mutazila
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:mutazila
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = quranist
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:quranist
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = ismaili
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:ismaili
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = qarmatian
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:qarmatian
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = nizari
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:nizari
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = zayidi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:zayidi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = imami
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:imami
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = ghulat
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:ghulat
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = alawite
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:alawite
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = alevi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:alevi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = druze
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:druze
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = ibadi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:ibadi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = azariqa
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:azariqa
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = najdat
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:najdat
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = sufri
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_3
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:sufri
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = digambara
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = jainism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:digambara
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = svetambara
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = jainism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:svetambara
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = yapaniya
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = jainism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:yapaniya
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = rabbinism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = judaism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:rabbinism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = karaism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = judaism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:karaism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = haymanot
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = judaism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:haymanot
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = malabarism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = judaism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:malabarism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = samaritan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = judaism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:samaritan
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = kabarism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = judaism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:kabarism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = kiratism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mundhum_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:kiratism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = yumaism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = mundhum_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:yumaism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = rrmeaism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = qiangic_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:rrmeaism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = melieism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = qiangic_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:melieism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = quanzhen
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = taoism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:quanzhen
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = shangqing
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = taoism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:shangqing
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = zhengyi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = taoism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:zhengyi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = west_african_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_african_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:west_african_pagan
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = west_african_bidu_pagan
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = west_african_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:west_african_bidu_pagan
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = kitebacilweism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = yazidi_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:kitebacilweism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = meshefaresism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = yazidi_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:meshefaresism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = yazidi
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = yazidi_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:yazidi
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = mazdayasna
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = zoroastrianism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:mazdayasna
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = zurvanism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = zoroastrianism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:zurvanism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = gayomarthianism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = zoroastrianism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:gayomarthianism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = khurmazta
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = zoroastrianism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:khurmazta
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = mazdakism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = zoroastrianism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:mazdakism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = khurramism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = zoroastrianism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:khurramism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = urartuism
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = zoroastrianism_religion_group
+			}
+		}
+		scope:char_editor = {
+			set_character_faith = faith:urartuism
+		}
+		trigger_event = sb_char_editor.42
+	}
+	
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = christianity_religion_group
+			add_character_flag = christianity_religion_group_2
+		}
+		trigger_event = sb_char_editor.42
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = christianity_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = christianity_religion_group_2
+			add_character_flag = christianity_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = islam_religion_group
+			add_character_flag = islam_religion_group_2
+		}
+		trigger_event = sb_char_editor.42
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_2
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = islam_religion_group_2
+			add_character_flag = islam_religion_group_3
+		}
+		trigger_event = sb_char_editor.42
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = islam_religion_group_3
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = islam_religion_group_3
+			add_character_flag = islam_religion_group
+		}
+		trigger_event = sb_char_editor.42
+	}
+
+	option = {
+		name = sb_char_editor_next
+		trigger = {
+			scope:char_editor = {
+				has_character_flag = religion_group
+			}
+		}
+		scope:char_editor = {
+			remove_character_flag = religion_group
+			add_character_flag = religion_group_2
+		}
+		trigger_event = sb_char_editor.42
+	}
+
+	option = {
+		name = sb_char_editor_back
+		scope:char_editor = {
+ 			remove_character_flag = bon_religion_group
+ 			remove_character_flag = buddhism_religion_group
+ 			remove_character_flag = christianity_religion_group
+ 			remove_character_flag = christianity_religion_group_2
+ 			remove_character_flag = tani_religion_group
+ 			remove_character_flag = dualism_religion_group
+ 			remove_character_flag = hinduism_religion_group
+ 			remove_character_flag = islam_religion_group
+ 			remove_character_flag = islam_religion_group_2
+ 			remove_character_flag = islam_religion_group_3
+ 			remove_character_flag = jainism_religion_group
+ 			remove_character_flag = judaism_religion_group
+ 			remove_character_flag = mundhum_religion_group
+ 			remove_character_flag = qiangic_religion_group
+ 			remove_character_flag = taoism_religion_group
+ 			remove_character_flag = west_african_religion_group
+ 			remove_character_flag = yazidi_religion_group
+ 			remove_character_flag = zoroastrianism_religion_group
+		}
+		trigger_event = sb_char_editor.41
+	}
+}
+
+### NAME MENU ###
+
+sb_char_editor.43 = {
+	type = character_event
+	title = sb_char_editor.naming.t
+	desc = sb_char_editor.naming.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+
+	widgets = {
+		widget = {
+			gui = "event_window_widget_name_child"
+			container = "dynamic_birth_name"
+			controller = name_character
+			setup_scope = { scope:char_editor = { save_scope_as = name_character_target } }
+		}
+	}
+
+	option = {
+		name = sb_char_editor_main_menu
+		trigger_event = sb_char_editor.1000
+	}
+}
+
+### MAIN MENU ###
+
+sb_char_editor.1000 = {
+	type = character_event
+	title = sb_char_editor.main_menu.t
+	desc = sb_char_editor.main_menu.d
+	theme = default
+	left_portrait = {
+		character = scope:char_editor
+		animation = personality_bold
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = sb_char_editor.naming.t
+		trigger_event = sb_char_editor.43
+	}
+
+	option = {
+		name = sb_char_editor.skill.t
+		trigger_event = sb_char_editor.1
+	}
+
+	option = {
+		name = sb_char_editor.traits.t
+		trigger_event = sb_char_editor.10
+	}
+
+	option = {
+		name = sb_char_editor.sexuality.t
+		trigger_event = sb_char_editor.32
+	}
+
+	option = {
+		name = sb_char_editor.culture.group.t
+		scope:char_editor = { add_character_flag = culture_page_1 }
+		trigger_event = sb_char_editor.40
+	}
+
+	option = {
+		name = sb_char_editor.religion.group.t
+		scope:char_editor = { add_character_flag = religion_page_1 }
+		trigger_event = sb_char_editor.41
+	}
+
+	option = {
+		name = sb_char_editor_end
+	}
+}

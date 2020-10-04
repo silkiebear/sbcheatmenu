@@ -1,0 +1,456 @@
+﻿
+namespace = sb_char_interactions
+
+sb_char_interactions.1 = {
+	type = character_event
+	title = sb_char_interactions.gold.event.t
+	desc = sb_char_interactions.gold.event.d
+	theme = default
+	left_portrait = {
+		character = scope:resource_scope
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_interactions.minus_10000
+		scope:resource_scope = {
+			remove_short_term_gold = 10000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_1000
+		scope:resource_scope = {
+			remove_short_term_gold = 1000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_100
+		scope:resource_scope = {
+			remove_short_term_gold = 100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_100
+		scope:resource_scope = {
+			add_gold = 100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_1000
+		scope:resource_scope = {
+			add_gold = 1000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	
+	option = {
+		name = sb_char_interactions.plus_10000
+		scope:resource_scope = {
+			add_gold = 10000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	option = {
+		name = sb_char_interactions.end
+		trigger_event = sb_char_interactions.7
+	}
+}
+
+sb_char_interactions.2 = {
+	type = character_event
+	title = sb_char_interactions.prestige.event.t
+	desc = sb_char_interactions.prestige.event.d
+	theme = default
+	left_portrait = {
+		character = scope:resource_scope
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_interactions.minus_10000
+		scope:resource_scope = {
+			add_prestige = -10000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_1000
+		scope:resource_scope = {
+			add_prestige = -1000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_100
+		scope:resource_scope = {
+			add_prestige = -100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_100
+		scope:resource_scope = {
+			add_prestige = 100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_1000
+		scope:resource_scope = {
+			add_prestige = 1000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	
+	option = {
+		name = sb_char_interactions.plus_10000
+		scope:resource_scope = {
+			add_prestige = 10000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	option = {
+		name = sb_char_interactions.end
+		trigger_event = sb_char_interactions.7
+	}
+}
+
+sb_char_interactions.3 = {
+	type = character_event
+	title = sb_char_interactions.piety.event.t
+	desc = sb_char_interactions.piety.event.d
+	theme = default
+	left_portrait = {
+		character = scope:resource_scope
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_interactions.minus_10000
+		scope:resource_scope = {
+			add_piety = -10000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_1000
+		scope:resource_scope = {
+			add_piety = -1000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_100
+		scope:resource_scope = {
+			add_piety = -100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_100
+		scope:resource_scope = {
+			add_piety = 100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_1000
+		scope:resource_scope = {
+			add_piety = 1000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	
+	option = {
+		name = sb_char_interactions.plus_10000
+		scope:resource_scope = {
+			add_piety = 10000
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	option = {
+		name = sb_char_interactions.end
+		trigger_event = sb_char_interactions.7
+	}
+}
+
+sb_char_interactions.4 = {
+	type = character_event
+	title = sb_char_interactions.renown.event.t
+	desc = sb_char_interactions.renown.event.d
+	theme = default
+	left_portrait = {
+		character = scope:resource_scope
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_interactions.minus_10000
+		scope:resource_scope = {
+			dynasty = {
+				add_dynasty_prestige = -10000
+			}
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_1000
+		scope:resource_scope = {
+			dynasty = {
+				add_dynasty_prestige = -1000
+			}
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_100
+		scope:resource_scope = {
+			dynasty = {
+				add_dynasty_prestige = -100
+			}
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_100
+		scope:resource_scope = {
+			dynasty = {
+				add_dynasty_prestige = 100
+			}
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_1000
+		scope:resource_scope = {
+			dynasty = {
+				add_dynasty_prestige = 1000
+			}
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	
+	option = {
+		name = sb_char_interactions.plus_10000
+		scope:resource_scope = {
+			dynasty = {
+				add_dynasty_prestige = 10000
+			}
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	option = {
+		name = sb_char_interactions.end
+		trigger_event = sb_char_interactions.7
+	}
+}
+
+sb_char_interactions.5 = {
+	type = character_event
+	title = sb_char_interactions.stress.event.t
+	desc = sb_char_interactions.stress.event.d
+	theme = default
+	left_portrait = {
+		character = scope:resource_scope
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_interactions.minus_100
+		scope:resource_scope = {
+			add_stress = -100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_50
+		scope:resource_scope = {
+			add_stress = -50
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_10
+		scope:resource_scope = {
+			add_stress = -10
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_10
+		scope:resource_scope = {
+			if = {
+				limit = {
+					has_trait = stress_gain_remove
+				}
+				remove_trait = stress_gain_remove
+			}
+			add_stress = 10
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_50
+		scope:resource_scope = {
+			if = {
+				limit = {
+					has_trait = stress_gain_remove
+				}
+				remove_trait = stress_gain_remove
+			}
+			add_stress = 50
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	
+	option = {
+		name = sb_char_interactions.plus_100
+		scope:resource_scope = {
+			if = {
+				limit = {
+					has_trait = stress_gain_remove
+				}
+				remove_trait = stress_gain_remove
+			}
+			add_stress = 100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	option = {
+		name = sb_char_interactions.end
+		trigger_event = sb_char_interactions.7
+	}
+}
+
+sb_char_interactions.6 = {
+	type = character_event
+	title = sb_char_interactions.tyranny.event.t
+	desc = sb_char_interactions.tyranny.event.d
+	theme = default
+	left_portrait = {
+		character = scope:resource_scope
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_interactions.minus_100
+		scope:resource_scope = {
+			add_tyranny = -100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_50
+		scope:resource_scope = {
+			add_tyranny = -50
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.minus_10
+		scope:resource_scope = {
+			add_tyranny = -10
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_10
+		scope:resource_scope = {
+			add_tyranny = 10
+		}
+		trigger_event = sb_char_interactions.7
+	}
+
+	option = {
+		name = sb_char_interactions.plus_50
+		scope:resource_scope = {
+			add_tyranny = 50
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	
+	option = {
+		name = sb_char_interactions.plus_100
+		scope:resource_scope = {
+			add_tyranny = 100
+		}
+		trigger_event = sb_char_interactions.7
+	}
+	option = {
+		name = sb_char_interactions.end
+		trigger_event = sb_char_interactions.7
+	}
+}
+
+sb_char_interactions.7 = {
+	type = character_event
+	title = sb_char_interactions.main.event.t
+	desc = sb_char_interactions.main.event.d
+	theme = default
+	left_portrait = {
+		character = scope:resource_scope
+		animation = personality_bold
+	}
+
+	option = {
+		name = sb_char_interactions.gold.event.t
+		trigger_event = sb_char_interactions.1
+	}
+
+	option = {
+		name = sb_char_interactions.prestige.event.t
+		trigger_event = sb_char_interactions.2
+	}
+
+	option = {
+		name = sb_char_interactions.piety.event.t
+		trigger_event = sb_char_interactions.3
+	}
+
+	option = {
+		name = sb_char_interactions.renown.event.t
+		trigger_event = sb_char_interactions.4
+	}
+
+	option = {
+		name = sb_char_interactions.stress.event.t
+		trigger_event = sb_char_interactions.5
+	}
+	
+	option = {
+		name = sb_char_interactions.tyranny.event.t
+		trigger_event = sb_char_interactions.6
+	}
+
+	option = {
+		name = sb_char_interactions.end
+		remove_character_flag = resource_scope
+	}
+}
