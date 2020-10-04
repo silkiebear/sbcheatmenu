@@ -1,0 +1,120 @@
+﻿close_silkiebear_menu = {
+    picture = gfx/interface/illustrations/decisions/close_tab.dds
+
+    desc = close_silkiebear_menu_desc
+    selection_tooltip = close_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    has_character_flag = silkiebear_cheat_menu
+    }
+
+    effect = {
+        remove_character_flag = silkiebear_cheat_menu
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+close_army_spawn_menu = {
+    picture = gfx/interface/illustrations/decisions/close_tab.dds
+
+    title = title_army_spawn_menu
+    desc = close_silkiebear_menu_desc
+    selection_tooltip = close_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = army_spawn_menu
+    }
+
+    effect = {
+		remove_character_flag = army_spawn_menu
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+close_cultural_innovations_menu = {
+    picture = gfx/interface/illustrations/decisions/close_tab.dds
+
+    title = title_culture_innovations_menu
+    desc = close_silkiebear_menu_desc
+    selection_tooltip = close_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = culture_innovations_menu
+    }
+
+    effect = {
+		remove_character_flag = culture_innovations_menu
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+close_government_menu = {
+    picture = gfx/interface/illustrations/decisions/close_tab.dds
+
+    title = title_government_menu
+    desc = close_silkiebear_menu_desc
+    selection_tooltip = close_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = govt_menu
+    }
+
+    effect = {
+		remove_character_flag = govt_menu
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+close_lifestyle_menu = {
+    picture = gfx/interface/illustrations/decisions/close_tab.dds
+
+    title = title_lifestyle_menu
+    desc = close_silkiebear_menu_desc
+    selection_tooltip = close_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    has_character_flag = lifestyle_menu
+		has_character_flag = silkiebear_cheat_menu
+    }
+
+    effect = {
+        remove_character_flag = lifestyle_menu
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+close_character_spawn_menu = {
+    picture = gfx/interface/illustrations/decisions/close_tab.dds
+
+    title = title_character_spawn_menu
+    desc = close_silkiebear_menu_desc
+    selection_tooltip = close_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    has_character_flag = character_spawn_menu
+		has_character_flag = silkiebear_cheat_menu
+    }
+
+    effect = {
+        remove_character_flag = character_spawn_menu
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}

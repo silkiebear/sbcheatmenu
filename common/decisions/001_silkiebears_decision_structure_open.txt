@@ -1,0 +1,135 @@
+﻿open_silkiebear_menu = {
+    picture = gfx/interface/illustrations/decisions/open_tab.dds
+
+    desc = open_silkiebear_menu_desc
+    selection_tooltip = open_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    NOT = { has_character_flag = silkiebear_cheat_menu }
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = silkiebear_cheat_menu
+        }
+    }
+	ai_check_interval = 0
+	
+    ai_will_do = 0
+}
+
+open_army_spawn_menu = {
+    picture = gfx/interface/illustrations/decisions/open_tab.dds
+
+	title = title_army_spawn_menu
+    desc = open_silkiebear_menu_desc
+    selection_tooltip = open_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = silkiebear_cheat_menu
+	   NOT = { has_character_flag = army_spawn_menu }
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = army_spawn_menu
+        }
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+open_culture_innovations_menu = {
+    picture = gfx/interface/illustrations/decisions/open_tab.dds
+
+	title = title_culture_innovations_menu
+    desc = open_silkiebear_menu_desc
+    selection_tooltip = open_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = silkiebear_cheat_menu
+	   NOT = { has_character_flag = culture_innovations_menu }
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = culture_innovations_menu
+        }
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+open_government_menu = {
+    picture = gfx/interface/illustrations/decisions/open_tab.dds
+
+	title = title_government_menu
+    desc = open_silkiebear_menu_desc
+    selection_tooltip = open_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = silkiebear_cheat_menu
+	   NOT = { has_character_flag = govt_menu }
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = govt_menu
+        }
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+open_lifestyle_menu = {
+    picture = gfx/interface/illustrations/decisions/open_tab.dds
+
+	title = title_lifestyle_menu
+    desc = open_silkiebear_menu_desc
+    selection_tooltip = open_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = silkiebear_cheat_menu
+	   NOT = { has_character_flag = lifestyle_menu }
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = lifestyle_menu
+        }
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+open_character_spawn_menu = {
+    picture = gfx/interface/illustrations/decisions/open_tab.dds
+
+	title = title_character_spawn_menu
+    desc = open_silkiebear_menu_desc
+    selection_tooltip = open_silkiebear_menu_desc
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	   has_character_flag = silkiebear_cheat_menu
+	   NOT = { has_character_flag = character_spawn_menu }
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = character_spawn_menu
+        }
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}

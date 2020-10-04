@@ -1,0 +1,539 @@
+﻿tribal_innovation_decision = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    desc = SB_GENERIC_EFFECT_DESC
+    selection_tooltip = SB_GENERIC_EFFECT_DESC
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    has_character_flag = silkiebear_cheat_menu
+		has_character_flag = culture_innovations_menu
+    }
+
+    effect = {
+		root.culture = {
+			add_innovation = innovation_motte
+			add_innovation = innovation_catapult
+			add_innovation = innovation_barracks
+			add_innovation = innovation_mustering_grounds
+			add_innovation = innovation_bannus
+			add_innovation = innovation_quilted_armor
+			add_innovation = innovation_development_01
+			add_innovation = innovation_resource_01
+			add_innovation = innovation_gavelkind
+			add_innovation = innovation_crop_rotation
+			add_innovation = innovation_city_planning
+			add_innovation = innovation_casus_belli
+			add_innovation = innovation_plenary_assemblies
+			add_innovation = innovation_ledger
+			
+			add_innovation = innovation_table_of_princes
+			add_innovation = innovation_visigothic_codes
+			add_innovation = innovation_longboats
+			add_innovation = innovation_elephantry
+			add_innovation = innovation_war_camels
+			add_innovation = innovation_wootz_steel
+			add_innovation = innovation_african_canoes	
+		}
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+early_medival_innovation_decision = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    desc = SB_GENERIC_EFFECT_DESC
+    selection_tooltip = SB_GENERIC_EFFECT_DESC
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    has_character_flag = silkiebear_cheat_menu
+		has_character_flag = culture_innovations_menu
+    }
+
+    effect = {
+		root.culture = {
+			add_innovation = innovation_battlements
+			add_innovation = innovation_mangonel
+			add_innovation = innovation_burhs
+			add_innovation = innovation_house_soldiers
+			add_innovation = innovation_horseshoes
+			add_innovation = innovation_arched_saddle
+			add_innovation = innovation_hereditary_rule
+			add_innovation = innovation_manorialism
+			add_innovation = innovation_development_02
+			add_innovation = innovation_resource_02
+			add_innovation = innovation_royal_prerogative
+			add_innovation = innovation_chronicle_writing
+			add_innovation = innovation_armilary_sphere
+			add_innovation = innovation_baliffs
+			
+			add_innovation = innovation_reconquista
+			add_innovation = innovation_stem_duchies
+			add_innovation = innovation_ghilman
+		}
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+high_medival_innovation_decision = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    desc = SB_GENERIC_EFFECT_DESC
+    selection_tooltip = SB_GENERIC_EFFECT_DESC
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = culture_innovations_menu
+    }
+
+    effect = {
+		root.culture = {
+			add_innovation = innovation_hoardings
+			add_innovation = innovation_trebuchet
+			add_innovation = innovation_castle_baileys
+			add_innovation = innovation_men_at_arms
+			add_innovation = innovation_knighthood
+			add_innovation = innovation_advanced_bowmaking
+			add_innovation = innovation_heraldry
+			add_innovation = innovation_windmills
+			add_innovation = innovation_divine_right
+			add_innovation = innovation_land_grants
+			add_innovation = innovation_scutage
+			add_innovation = innovation_guilds
+			add_innovation = innovation_development_03
+			add_innovation = innovation_resource_03
+			
+			add_innovation = innovation_east_settling
+			add_innovation = innovation_seigneurialism
+			add_innovation = innovation_muladi
+			add_innovation = innovation_french_peerage
+		}
+    }
+	
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+late_medival_innovation_decision = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    desc = SB_GENERIC_EFFECT_DESC
+    selection_tooltip = SB_GENERIC_EFFECT_DESC
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    has_character_flag = silkiebear_cheat_menu
+		has_character_flag = culture_innovations_menu
+    }
+
+    effect = {
+		root.culture = {
+			add_innovation = innovation_machicolations
+			add_innovation = innovation_bombard
+			add_innovation = innovation_royal_armory
+			add_innovation = innovation_standing_armies
+			add_innovation = innovation_sappers
+			add_innovation = innovation_plate_armor
+			add_innovation = innovation_primogeniture
+			add_innovation = innovation_cranes
+			add_innovation = innovation_noblesse_oblige
+			add_innovation = innovation_rightful_ownership
+			add_innovation = innovation_ermine_cloaks
+			add_innovation = innovation_court_officials
+			add_innovation = innovation_development_04
+			add_innovation = innovation_resource_04
+			
+			add_innovation = innovation_wierdijks
+			add_innovation = innovation_condottieri
+			add_innovation = innovation_deccan_unity
+		}
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+special_innovation_decision = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    desc = SB_GENERIC_EFFECT_DESC
+    selection_tooltip = SB_GENERIC_EFFECT_DESC
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    has_character_flag = silkiebear_cheat_menu
+		has_character_flag = culture_innovations_menu
+    }
+
+    effect = {
+		root.culture = {
+			add_innovation = innovation_hird
+			add_innovation = innovation_zweihanders
+			add_innovation = innovation_longbows
+			add_innovation = innovation_adaptive_militia
+			add_innovation = innovation_valets
+			add_innovation = innovation_pike_columns
+			add_innovation = innovation_legionnaires
+			add_innovation = innovation_desert_tactics
+			add_innovation = innovation_caballeros
+			add_innovation = innovation_cataphracts
+			add_innovation = innovation_hobbies
+			add_innovation = innovation_rectilinear_schiltron
+			add_innovation = innovation_forest_wardens
+			add_innovation = innovation_compound_bows
+			add_innovation = innovation_khandayats
+			add_innovation = innovation_mubarizuns
+			add_innovation = innovation_hussar_raids
+			add_innovation = innovation_druzhina
+			add_innovation = innovation_mountain_skirmishing
+			add_innovation = innovation_bush_hunting
+			add_innovation = innovation_mobile_guards
+			add_innovation = innovation_alpine_supremacy
+			add_innovation = innovation_sahel_horsemen
+			add_innovation = innovation_zbrojnosh
+			add_innovation = innovation_desert_mountain_herding
+			add_innovation = innovation_sarawit
+			add_innovation = innovation_upland_skirmishing
+			add_innovation = innovation_royal_army_tradition
+			add_innovation = innovation_repeating_crossbow
+		}
+    }
+	
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+change_government_republic = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    title = "Change Government: Republic"
+    desc = "Change your system to a republic."
+    selection_tooltip = "Give me my elections please."
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    NOT = { has_government = republic_government }
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+    }
+
+    effect = {
+		change_government = republic_government
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+change_government_feudal = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    title = "Change Government: Feudal"
+    desc = "Change your system to the feudal system."
+    selection_tooltip = "Give me my king."
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    NOT = { has_government = feudal_government }
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+    }
+
+    effect = {
+		change_government = feudal_government
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+change_government_clan = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    title = "Change Government: Clan"
+    desc = "Change your system to the clan system."
+    selection_tooltip = "Give me my clans."
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    NOT = { has_government = clan_government }
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+    }
+
+    effect = {
+		change_government = clan_government
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+change_government_tribal = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    title = "Change Government: Tribal"
+    desc = "Change your system to the tribal system."
+    selection_tooltip = "Give me my tribes."
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    NOT = { has_government = tribal_government }
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+    }
+
+    effect = {
+		change_government = tribal_government
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+change_succession_single = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    title = "Change Succession: Single Oldest"
+    desc = "Change succession law to the oldest heir."
+    selection_tooltip = "Single Oldest Heir Succession."
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    NOR = {
+			has_government = theocracy_government
+			has_government = republic_government
+			has_government = mercenary_government
+			has_government = tribal_government
+			has_government = clan_government
+		}
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+    }
+
+    effect = {
+		add_realm_law_skip_effects = single_heir_succession_law
+		root.culture = {
+			add_innovation = innovation_primogeniture
+		}
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+change_succession_single_youngest = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+
+    title = "Change Succession: Single Youngest"
+    desc = "Change succession law to the youngest heir."
+    selection_tooltip = "Single Youngest Heir Succession."
+    confirm_text = CONFIRM_OKAY
+
+    is_shown = {
+	    NOR = {
+			has_government = theocracy_government
+			has_government = republic_government
+			has_government = mercenary_government
+			has_government = tribal_government
+			has_government = clan_government
+		}
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+    }
+
+    effect = {
+		add_realm_law_skip_effects = single_heir_succession_law_youngest
+		root.culture = {
+			add_innovation = innovation_primogeniture
+		}
+    }
+	ai_check_interval = 0
+
+    ai_will_do = 0
+}
+
+inquisition_enabled = {
+	picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+	title = "Convert Realm to Religion"
+    desc = "Increase wealth with one simple click."
+    selection_tooltip = "Don't go too far..."
+    confirm_text = "Increase your treasury by 1000 Gold"
+
+	is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+	}
+
+	effect = {
+		every_realm_county = {
+			limit = {}
+			set_county_faith = root.faith
+		}
+		every_vassal_or_below = {
+			limit = {}
+			set_character_faith_with_conversion = root.faith
+		}
+	}
+
+	ai_check_interval = 0
+}
+
+genocide_other_people = {
+	picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+	title = "Convert Realm to Culture"
+    desc = "Increase wealth with one simple click."
+    selection_tooltip = "Don't go too far..."
+    confirm_text = "Increase your treasury by 1000 Gold"
+
+	is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = govt_menu
+	}
+
+	effect = {
+		every_realm_county = {
+			limit = {}
+			set_county_culture = root.culture
+		}
+		every_vassal_or_below = {
+			limit = {}
+			set_culture = root.culture
+		}
+	}
+
+	ai_check_interval = 0
+}
+
+army_spawner_0 = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+	title = "100 Troop Spawn"
+    desc = "Spawns 100 Troops in your Capital"
+    selection_tooltip = "Don't go too far..."
+    confirm_text = CONFIRM_OKAY
+	
+	is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = army_spawn_menu
+	}
+
+	effect = {
+		spawn_army = {
+			levies = 100
+			location = root.capital_province
+			inheritable = yes
+			uses_supply = yes
+			name = "Crusaders"
+		}
+	}
+
+	ai_check_interval = 0
+}
+
+army_spawner_1 = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+	title = "1,000 Troop Spawn"
+    desc = "Spawns 1,000 Troops in your Capital"
+    selection_tooltip = "Don't go too far..."
+    confirm_text = CONFIRM_OKAY
+
+	is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = army_spawn_menu
+	}
+
+	effect = {
+		spawn_army = {
+			levies = 1000
+			location = root.capital_province
+			inheritable = yes
+			uses_supply = yes
+			name = "Crusaders"
+		}
+	}
+
+	ai_check_interval = 0
+}
+
+army_spawner_2 = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+	title = "10,000 Troop Spawn"
+    desc = "Spawns 10,000 Troops in your Capital"
+    selection_tooltip = "Don't go too far..."
+    confirm_text = CONFIRM_OKAY
+
+	is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = army_spawn_menu
+	}
+
+	effect = {
+		spawn_army = {
+			levies = 10000
+			location = root.capital_province
+			inheritable = yes
+			uses_supply = yes
+			name = "Crusaders"
+		}
+	}
+
+	ai_check_interval = 0
+}
+
+army_spawner_3 = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+	title = "100,000 Troop Spawn"
+    desc = "Spawns 100,000 Troops in your Capital"
+    selection_tooltip = "Don't go too far..."
+    confirm_text = CONFIRM_OKAY
+
+	is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = army_spawn_menu
+	}
+
+	effect = {
+		spawn_army = {
+			levies = 100000
+			location = root.capital_province
+			inheritable = yes
+			uses_supply = yes
+			name = "Crusaders"
+		}
+	}
+
+	ai_check_interval = 0
+}
+
+army_spawner_4 = {
+    picture = gfx/interface/illustrations/decisions/cheat_tab.dds
+	title = "1,000,000 Troop Spawn"
+    desc = "Please be careful with this button. I am not liable for any damage. Spawns 1,000,000 Troops in your Capital"
+    selection_tooltip = "Don't go too far..."
+    confirm_text = "I Agree to the terms of Service"
+
+	is_shown = {
+		has_character_flag = silkiebear_cheat_menu
+		has_character_flag = army_spawn_menu
+	}
+
+	effect = {
+		spawn_army = {
+			levies = 1000000
+			location = root.capital_province
+			inheritable = yes
+			uses_supply = yes
+			name = "Crusaders"
+		}
+	}
+
+	ai_check_interval = 0
+}
