@@ -1,0 +1,140 @@
+#################### WHAT IT SAYS IN THE FILENAME ####################
+
+window = {
+	name = "manage_titles"
+	parentanchor = top|right
+	position = { -15 90 }
+	size = { 620 1000 }
+	movable = yes
+	layer = windows_layer
+
+	using = Window_Background
+	using = Window_Decoration_Spike
+
+	vbox = {
+		using = Window_Margins
+
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+			
+			blockoverride "header_text"
+			{
+				text = "manage_titles"
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[RevokeTitlesInteractionWindow.Close]"
+			}
+
+			icon_character_interaction = {}
+		}
+
+		### Titles list
+		scrollbox = {
+			name = "titles_list"
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			blockoverride "scrollbox_empty"
+			{
+				visible = "[Not(RevokeTitlesInteractionWindow.HasTitles)]"
+				text = "GRANT_TITLES_NO_TITLES"
+			}
+
+			blockoverride "scrollbox_content"
+			{
+				vbox_list_interaction_title_selection = {
+					layoutpolicy_horizontal = expanding
+				}
+			}
+		}
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			margin = { 20 10 }
+			spacing = 3
+
+			### Filter Recent Titles
+			button_checkbox = {
+				onclick = "[RevokeTitlesInteractionWindow.OnTimedFilter]"
+				tooltip = "[RevokeTitlesInteractionWindow.GetTimedFilterTooltip]"
+			}
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				text = "GRANT_REVOKE_TITLES_FILTER_LABEL"
+
+			}
+			hbox = {
+				tooltip = "[RevokeTitlesInteractionWindow.GetDomainLimitTooltip]"
+				using = tooltip_se
+
+				background = {
+					margin = { 5 0 }
+					visible = "[GreaterThan_int32(RevokeTitlesInteractionWindow.GetResultingDomainSize,CharacterInteractionConfirmationWindow.GetActor.GetDomainLimit)]"
+
+					using = Status_Bad
+				}
+
+				spacing = 3
+
+				icon = {
+					texture = "gfx/interface/icons/icon_domain.dds"
+					size = { 30 30 }
+				}
+
+				### Effects on Domain Limit
+				text_single = {
+					name = "domain_limit_label"
+					text = "GRANT_REVOKE_TITLES_NEW_DOMAIN_LABEL"
+				}
+
+				text_single = {
+					name = "domain_limit_result"
+					text = "[RevokeTitlesInteractionWindow.GetResultingDomainSize]/[CharacterInteractionConfirmationWindow.GetActor.GetDomainLimit]"
+					tooltip = "[RevokeTitlesInteractionWindow.GetDomainLimitTooltip]"
+				}
+			}
+		}
+
+		### Other Effects
+		vbox = {
+			name = "other_effects_list"
+			layoutpolicy_horizontal = expanding
+			margin_bottom = 15
+			spacing = 10
+
+			### label
+			text_label_center = {
+				text = "GRANT_REVOKE_TITLES_OTHER_EFFECT_LABEL"
+			}
+
+			### List
+			vbox_character_interaction_effects_simple = {
+				datacontext = "[CharacterInteractionConfirmationWindow.GetEffectsDescription]"
+				layoutpolicy_horizontal = expanding
+				blockoverride "extra_content" {
+					text_multi = {
+						visible = "[InteractionEffectsDescription.IsShowingOnAcceptEffects]"
+						name = "extra_accept_effects_info"
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						autoresize = yes
+						max_width = 450
+						margin = { 5 0 }
+					}
+				}
+			}
+
+			### SEND OFFER BUTTON
+			button_primary = {
+				name = "send_offer_button"
+				size = { 410 50 }
+				text = "[CharacterInteractionConfirmationWindow.GetSendName]"
+				onclick = "[RevokeTitlesInteractionWindow.Send]"
+				tooltip = "[RevokeTitlesInteractionWindow.GetSendOfferTooltip]"
+			}
+		}
+	}
+}
