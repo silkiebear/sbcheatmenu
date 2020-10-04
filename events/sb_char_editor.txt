@@ -481,25 +481,6 @@ sb_char_editor.8 = {
 	}
 
 	option = {
-		name = trait_100_stat_man
-		trigger = {
-			scope:char_editor = { has_character_flag = special_trait_page_1 }
-		}
-		scope:char_editor = {
-			if = {
-				limit = {
-					has_trait = 100_stat_man
-				}
-				remove_trait = 100_stat_man
-			}
-			else = {
-				add_trait = 100_stat_man
-			}
-		}
-		trigger_event = sb_char_editor.8
-	}
-
-	option = {
 		name = trait_hale_and_hearty
 		trigger = {
 			scope:char_editor = { has_character_flag = special_trait_page_1 }
