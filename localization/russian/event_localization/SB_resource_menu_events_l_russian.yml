@@ -1,0 +1,30 @@
+﻿l_russian:
+ sb_char_interactions.main.event.t:0 "Resource Menu"
+ sb_char_interactions.main.event.d:0 "Menu for adding or removing resources - gold, prestige, piety, renown, stress, tyranny - for any selected character."
+ 
+ sb_char_interactions.gold.event.t:1 "Gold"
+ sb_char_interactions.gold.event.d:0 "Add/Remove gold from any character."
+ sb_char_interactions.prestige.event.t:1 "Prestige"
+ sb_char_interactions.prestige.event.d:0 "Add/Remove prestige from any character."
+ sb_char_interactions.piety.event.t:1 "Piety"
+ sb_char_interactions.piety.event.d:0 "Add/Remove piety from any character."
+ sb_char_interactions.renown.event.t:1 "Renown"
+ sb_char_interactions.renown.event.d:0 "Add/Remove renown from any character."
+ sb_char_interactions.stress.event.t:1 "Stress"
+ sb_char_interactions.stress.event.d:0 "Add/Remove stress from any character.\n NOTE: Stress gain depends on your character's stress gain modifier. The numbers shown are at default."
+ sb_char_interactions.tyranny.event.t:1 "Tyranny"
+ sb_char_interactions.tyranny.event.d:0 "Add/Remove tyranny from any character."
+ 
+ sb_char_interactions.minus_10000:0 "-10,000"
+ sb_char_interactions.minus_1000:0 "-1,000"
+ sb_char_interactions.minus_100:0 "-100"
+ sb_char_interactions.minus_50:0 "-50"
+ sb_char_interactions.minus_10:0 "-10"
+ 
+ sb_char_interactions.plus_10000:0 "+10,000"
+ sb_char_interactions.plus_1000:0 "+1,000"
+ sb_char_interactions.plus_100:0 "+100"
+ sb_char_interactions.plus_50:0 "+50"
+ sb_char_interactions.plus_10:0 "+10"
+ 
+ sb_char_interactions.end:0 "Close Menu"
